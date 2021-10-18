@@ -1,0 +1,992 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SupperAppIonic documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SupperAppIonic documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  MarketingScreenPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/Pages/marketing-screen/marketing-screen.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-marketing-screen</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./marketing-screen.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./marketing-screen.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#color" >color</a>
+                            </li>
+                            <li>
+                                <a href="#languageType" >languageType</a>
+                            </li>
+                            <li>
+                                <a href="#MarketingScreen" >MarketingScreen</a>
+                            </li>
+                            <li>
+                                <a href="#MarketingScreenNumber" >MarketingScreenNumber</a>
+                            </li>
+                            <li>
+                                <a href="#screen" >screen</a>
+                            </li>
+                            <li>
+                                <a href="#slides" >slides</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#GetDynamicData" >GetDynamicData</a>
+                            </li>
+                            <li>
+                                <a href="#next" >next</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#prev" >prev</a>
+                            </li>
+                            <li>
+                                <a href="#skip" >skip</a>
+                            </li>
+                            <li>
+                                <a href="#swipeNext" >swipeNext</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, _dynamicData: <a href="../injectables/DynamicTempleteService.html" target="_self">DynamicTempleteService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_dynamicData</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DynamicTempleteService.html" target="_self" >DynamicTempleteService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetDynamicData"></a>
+                    <span class="name">
+                        <span ><b>GetDynamicData</b></span>
+                        <a href="#GetDynamicData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>GetDynamicData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="next"></a>
+                    <span class="name">
+                        <span ><b>next</b></span>
+                        <a href="#next"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>next()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="24"
+                            class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:24</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="prev"></a>
+                    <span class="name">
+                        <span ><b>prev</b></span>
+                        <a href="#prev"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>prev()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="skip"></a>
+                    <span class="name">
+                        <span ><b>skip</b></span>
+                        <a href="#skip"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>skip()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="swipeNext"></a>
+                    <span class="name">
+                        <span ><b>swipeNext</b></span>
+                        <a href="#swipeNext"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>swipeNext(slides, pos)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>slides</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pos</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="color"></a>
+                    <span class="name">
+                        <span ><b>color</b></span>
+                        <a href="#color"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="languageType"></a>
+                    <span class="name">
+                        <span ><b>languageType</b></span>
+                        <a href="#languageType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;en&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MarketingScreen"></a>
+                    <span class="name">
+                        <span ><b>MarketingScreen</b></span>
+                        <a href="#MarketingScreen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="MarketingScreenNumber"></a>
+                    <span class="name">
+                        <span ><b>MarketingScreenNumber</b></span>
+                        <a href="#MarketingScreenNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="screen"></a>
+                    <span class="name">
+                        <span ><b>screen</b></span>
+                        <a href="#screen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="slides"></a>
+                    <span class="name">
+                        <span ><b>slides</b></span>
+                        <a href="#slides"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>IonSlides</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;mySlider&#x27;, {static: false})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/Pages/marketing-screen/marketing-screen.page.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { IonSlides } from &#x27;@ionic/angular&#x27;;
+import { DynamicTempleteService } from &#x27;src/app/Services/dynamic-templete.service&#x27;;
+
+@Component({
+  selector: &#x27;app-marketing-screen&#x27;,
+  templateUrl: &#x27;./marketing-screen.page.html&#x27;,
+  styleUrls: [&#x27;./marketing-screen.page.scss&#x27;],
+})
+export class MarketingScreenPage implements OnInit {
+  MarketingScreen: boolean &#x3D; false;
+  MarketingScreenNumber: number &#x3D; 0;
+  screen: any;
+  color: string;
+  languageType: String &#x3D; &quot;en&quot;;
+
+  @ViewChild(&#x27;mySlider&#x27;, { static: false }) slides: IonSlides;
+
+  constructor(private _router: Router, private _dynamicData: DynamicTempleteService) {
+    this.GetDynamicData()
+  }
+
+  ngOnInit() {
+  }
+
+  swipeNext(slides, pos) {
+    this.slides.slideNext();
+    // alert(&quot;swipe &quot; + slides)
+    // if(pos &#x3D;&#x3D; this.screen.length-1){
+    //   this._router.navigate([&#x27;../SignUp&#x27;]);
+    // } else{
+    //   slides.slideNext();
+    // }
+
+    // this.slides.slideTo(2, 3);
+  }
+  next() {
+    this.slides.slideNext();
+  }
+
+  prev() {
+    this.slides.slidePrev();
+  }
+  skip() {
+    this._router.navigate([&#x27;../SignUp&#x27;]);
+  }
+
+  GetDynamicData() {
+    // this._dynamicData.GetDynamicHealthData().subscribe(data &#x3D;&gt; {
+    //   if (data) {
+    //     console.log(&quot;data from service&quot; + data[1].templateName)
+    //     if(data[1].templateName !&#x3D; &quot;&quot; &amp;&amp; data[1].templateName &#x3D;&#x3D; &quot;MarketingScreen&quot;){
+    //       this.MarketingScreen &#x3D; true;
+    //       this.MarketingScreenNumber &#x3D; data[1].MarketingScreenNumber;
+    //       console.log(this.MarketingScreenNumber)
+    //       this.screen &#x3D; data[1].screen;
+    //       console.log(this.screen.length);
+    //     }
+    //   }
+    // });
+
+    this._dynamicData.GetMarketingScreen(this.languageType).subscribe(data &#x3D;&gt; {
+      if (data) {
+        console.log(&quot;data from service&quot; + data.templateName)
+        if (data.templateName !&#x3D; &quot;&quot; &amp;&amp; data.templateName &#x3D;&#x3D; &quot;MarketingScreen&quot;) {
+          this.MarketingScreen &#x3D; true;
+          this.MarketingScreenNumber &#x3D; data.MarketingScreenNumber;
+          console.log(this.MarketingScreenNumber)
+          this.screen &#x3D; data.screen;
+          console.log(this.screen.length);
+        }
+      }
+    });
+
+    if (this.languageType &#x3D;&#x3D; &quot;en&quot;) {
+      this.languageType &#x3D; &quot;hn&quot;
+    } else {
+      this.languageType &#x3D; &quot;en&quot;
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content&gt;
+    &lt;ion-slides pager&#x3D;&quot;true&quot; pager&#x3D;&quot;true&quot; #mySlider *ngIf&#x3D;&quot;screen !&#x3D; null&quot;&gt;
+
+        &lt;ion-slide class&#x3D;&quot;cc_bg&quot;&gt;
+            &lt;div class&#x3D;&quot;parent&quot;&gt;
+                &lt;div class&#x3D;&quot;child&quot;&gt;
+                    &lt;div class&#x3D;&quot;popup&quot;&gt;
+                        &lt;div class&#x3D;&quot;loadingScreen animated fadeInUp&quot;&gt;
+                            &lt;img class&#x3D;&quot;zoom-in-zoom-out&quot; src&#x3D;&quot;{{screen[0].logo}}&quot; /&gt;
+                            &lt;div class&#x3D;&quot;box&quot;&gt;&lt;/div&gt;
+                            &lt;h1 class&#x3D;&quot;cc_position&quot;&gt;{{screen[0].title}}&lt;/h1&gt;
+                            &lt;h1&gt;{{screen[0].title1}}&lt;/h1&gt;
+                            &lt;h1&gt;
+                                &lt;strong&gt;
+                                    {{screen[0].paragraph}}&lt;/strong&gt;
+                            &lt;/h1&gt;
+                            &lt;ion-button class&#x3D;&quot;skip &quot; (click)&#x3D;&quot;skip()&quot;&gt;{{screen[0].skipLabel}}&lt;/ion-button&gt;
+                            &lt;ion-button class&#x3D;&quot;next&quot; (click)&#x3D;&quot;swipeNext()&quot;&gt;{{screen[0].nextLabel}}&lt;/ion-button&gt;
+
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/ion-slide&gt;
+
+        &lt;ion-slide&gt;
+            &lt;div class&#x3D;&quot;parent&quot;&gt;
+                &lt;div class&#x3D;&quot;child slide&quot;&gt;
+                    &lt;div class&#x3D;&quot;popup&quot;&gt;
+                        &lt;div class&#x3D;&quot;loadingScreen animated fadeInUp&quot;&gt;
+                            &lt;img class&#x3D;&quot;cc_MarginTop89px&quot; src&#x3D;&quot;{{screen[1].image}}&quot; /&gt;
+                            &lt;h2&gt;{{screen[1].title}}&lt;/h2&gt;
+                            &lt;p&gt;{{screen[1].paragraph}}&lt;/p&gt;
+                            &lt;ion-button class&#x3D;&quot;skip cc_gray&quot; (click)&#x3D;&quot;skip()&quot;&gt;{{screen[1].skipLabel}}&lt;/ion-button&gt;
+                            &lt;ion-button class&#x3D;&quot;next cc_blue&quot; (click)&#x3D;&quot;swipeNext()&quot;&gt;{{screen[1].nextLabel}}&lt;/ion-button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+        &lt;/ion-slide&gt;
+
+        &lt;ion-slide&gt;
+            &lt;div class&#x3D;&quot;parent&quot;&gt;
+                &lt;div class&#x3D;&quot;child slide&quot;&gt;
+                    &lt;div class&#x3D;&quot;popup&quot;&gt;
+                        &lt;div class&#x3D;&quot;loadingScreen animated fadeInUp&quot;&gt;
+                            &lt;img class&#x3D;&quot;cc_MarginTop89px&quot; src&#x3D;&quot;{{screen[2].image}}&quot; /&gt;
+                            &lt;h2&gt;{{screen[2].title}}&lt;/h2&gt;
+                            &lt;p&gt;{{screen[2].paragraph}}&lt;/p&gt;
+                            &lt;ion-button class&#x3D;&quot;skip cc_gray&quot; (click)&#x3D;&quot;skip()&quot;&gt;{{screen[2].skipLabel}}&lt;/ion-button&gt;
+                            &lt;ion-button class&#x3D;&quot;next cc_blue&quot; [routerLink]&#x3D;&quot;[&#x27;/SignUp&#x27;]&quot;&gt;{{screen[2].nextLabel}}&lt;/ion-button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+
+        &lt;/ion-slide&gt;
+
+
+    &lt;/ion-slides&gt;
+
+    &lt;!-- &lt;ion-slides [options]&#x3D;&quot;sliderConfig&quot; pager&#x3D;&quot;true&quot; #theSlides class&#x3D;&quot;MarketingScreen&quot; *ngIf&#x3D;&quot;MarketingScreen&quot;&gt;
+        &lt;ion-slide *ngFor&#x3D;&quot;let screenContent of screen;  
+        let i &#x3D; index;  
+        let lst &#x3D; last; 
+        let fst &#x3D; first;
+        &quot;&gt;
+            &lt;div class&#x3D;&quot;parent&quot;&gt;
+                &lt;div class&#x3D;&quot;child slide&quot;&gt;
+                    &lt;img class&#x3D;&quot;cc_MarginTop89px&quot; src&#x3D;{{screenContent.Image}}/&gt;
+                    &lt;h2&gt;{{screenContent.title}}&lt;/h2&gt;
+                    &lt;p&gt;{{screenContent.paragraph}}&lt;/p&gt;
+                    &lt;ion-button class&#x3D;&quot;skip cc_gray&quot; (click)&#x3D;&quot;skip()&quot;&gt;Skip&lt;/ion-button&gt;
+                    &lt;ion-button *ngIf&#x3D;&quot;fst&quot; class&#x3D;&quot;next cc_blue&quot; (click)&#x3D;&quot;swipeNext(theSlides, i)&quot;&gt;Next&lt;/ion-button&gt;
+                    &lt;ion-button *ngIf&#x3D;&quot;i&quot; class&#x3D;&quot;next cc_blue&quot; (click)&#x3D;&quot;swipeNext(theSlides, i)&quot;&gt;Next&lt;/ion-button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/ion-slide&gt;
+    &lt;/ion-slides&gt; --&gt;
+&lt;/ion-content&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./marketing-screen.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content>    <ion-slides pager="true" pager="true" #mySlider *ngIf="screen != null">        <ion-slide class="cc_bg">            <div class="parent">                <div class="child">                    <div class="popup">                        <div class="loadingScreen animated fadeInUp">                            <img class="zoom-in-zoom-out" src="{{screen[0].logo}}" />                            <div class="box"></div>                            <h1 class="cc_position">{{screen[0].title}}</h1>                            <h1>{{screen[0].title1}}</h1>                            <h1>                                <strong>                                    {{screen[0].paragraph}}</strong>                            </h1>                            <ion-button class="skip " (click)="skip()">{{screen[0].skipLabel}}</ion-button>                            <ion-button class="next" (click)="swipeNext()">{{screen[0].nextLabel}}</ion-button>                        </div>                    </div>                </div>            </div>        </ion-slide>        <ion-slide>            <div class="parent">                <div class="child slide">                    <div class="popup">                        <div class="loadingScreen animated fadeInUp">                            <img class="cc_MarginTop89px" src="{{screen[1].image}}" />                            <h2>{{screen[1].title}}</h2>                            <p>{{screen[1].paragraph}}</p>                            <ion-button class="skip cc_gray" (click)="skip()">{{screen[1].skipLabel}}</ion-button>                            <ion-button class="next cc_blue" (click)="swipeNext()">{{screen[1].nextLabel}}</ion-button>                        </div>                    </div>                </div>            </div>        </ion-slide>        <ion-slide>            <div class="parent">                <div class="child slide">                    <div class="popup">                        <div class="loadingScreen animated fadeInUp">                            <img class="cc_MarginTop89px" src="{{screen[2].image}}" />                            <h2>{{screen[2].title}}</h2>                            <p>{{screen[2].paragraph}}</p>                            <ion-button class="skip cc_gray" (click)="skip()">{{screen[2].skipLabel}}</ion-button>                            <ion-button class="next cc_blue" [routerLink]="[\'/SignUp\']">{{screen[2].nextLabel}}</ion-button>                        </div>                    </div>                </div>            </div>        </ion-slide>    </ion-slides>    <!-- <ion-slides [options]="sliderConfig" pager="true" #theSlides class="MarketingScreen" *ngIf="MarketingScreen">        <ion-slide *ngFor="let screenContent of screen;          let i = index;          let lst = last;         let fst = first;        ">            <div class="parent">                <div class="child slide">                    <img class="cc_MarginTop89px" src={{screenContent.Image}}/>                    <h2>{{screenContent.title}}</h2>                    <p>{{screenContent.paragraph}}</p>                    <ion-button class="skip cc_gray" (click)="skip()">Skip</ion-button>                    <ion-button *ngIf="fst" class="next cc_blue" (click)="swipeNext(theSlides, i)">Next</ion-button>                    <ion-button *ngIf="i" class="next cc_blue" (click)="swipeNext(theSlides, i)">Next</ion-button>                </div>            </div>        </ion-slide>    </ion-slides> --></ion-content></div>'
+    var COMPONENTS = [{'name': 'AllWellnessComponent', 'selector': 'app-all-wellness'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasicModeComponent', 'selector': 'app-basic-mode'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HealthComponent', 'selector': 'app-health'},{'name': 'HealthWellnessComponent', 'selector': 'app-health-wellness'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InvestPage', 'selector': 'app-invest'},{'name': 'InvestPage', 'selector': 'app-invest'},{'name': 'LifestyleComponent', 'selector': 'app-lifestyle'},{'name': 'LoginWithPhonePage', 'selector': 'app-login-with-phone'},{'name': 'LumpsumTransactionComponent', 'selector': 'app-lumpsum-transaction'},{'name': 'LumpsumTransactionHeaderComponent', 'selector': 'app-lumpsum-transaction-header'},{'name': 'MarketingScreenPage', 'selector': 'app-marketing-screen'},{'name': 'MfFilterComponent', 'selector': 'app-mf-filter'},{'name': 'MfHeaderComponent', 'selector': 'app-mf-header'},{'name': 'MfLandingWithKYCNotTransactionComponent', 'selector': 'app-mf-landing-with-kyc-not-transaction'},{'name': 'MfPageDetailsComponent', 'selector': 'app-mf-page-details'},{'name': 'MfPageHeaderComponent', 'selector': 'app-mf-page-header'},{'name': 'ProductListComponent', 'selector': 'app-product-list'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SignUpPage', 'selector': 'app-sign-up'},{'name': 'SplashScreenPage', 'selector': 'app-splash-screen'},{'name': 'SupperAppLandingPage', 'selector': 'app-supper-app-landing'},{'name': 'WatchlistPage', 'selector': 'app-watchlist'},{'name': 'WatchlistPage', 'selector': 'app-watchlist'},{'name': 'WealthComponent', 'selector': 'app-wealth'},{'name': 'WealthWellnessComponent', 'selector': 'app-wealth-wellness'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'MarketingScreenPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MarketingScreenPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

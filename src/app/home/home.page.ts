@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,24 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  @ViewChild('mySlider')  slides: IonSlides;
+  
+  constructor( private _router: Router) {}
+ 
 
-  constructor() {}
+  swipeNext(){
+    this.slides.slideNext();
+  }
+  next() {
+    this.slides.slideNext();
+  }
 
+  prev() {
+    this.slides.slidePrev();
+  }
+  
+  skip()
+  {
+    this._router.navigate(['../SignUp']);
+  }
 }

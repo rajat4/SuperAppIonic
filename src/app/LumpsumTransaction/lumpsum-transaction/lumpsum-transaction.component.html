@@ -1,0 +1,49 @@
+<app-lumpsum-transaction-header></app-lumpsum-transaction-header>
+
+<ion-content>
+  <div class="lumpsumTransactionMainDiv" *ngIf="lumpsumTransData != null">
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2"
+      *ngIf="lumpsumTransData.investedStatus == 'Success'">
+      <circle class="path circle" fill="none" stroke-width="8" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1" />
+      <polyline class="path check" fill="none" stroke-width="8" stroke-linecap="round" stroke-miterlimit="10"
+        points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+    </svg>
+
+    <p class="pUvInvested">{{lumpsumTransData.investedLabel}}</p>
+
+    <p class="pRupees" *ngIf="lumpsumTransData.currency == 'Inr'">
+      <span>&#8377;</span>{{lumpsumTransData.investedAmount}}</p>
+
+    <p class="pTCPeriod">{{lumpsumTransData.paymentRcvdPeriod}}</p>
+
+    <div class="divTransDetail" *ngIf="lumpsumTransData.investDetails != null">
+      <ion-card class="cardTransDetail">
+        <h6>{{lumpsumTransData.investDetails[0].productName}}</h6>
+        <div class="divInvestDetail">
+          <ion-row>
+            <ion-col size="6">
+                <p class="pInvestLabel">{{lumpsumTransData.investDetails[0].investAmLabel}}</p>
+                <p class="pInvestValue"><span>&#8377;</span>{{lumpsumTransData.investDetails[0].investedAmount}}</p>
+            </ion-col>
+            <ion-col size="6">
+                <p class="pInvestLabel">{{lumpsumTransData.investDetails[0].investTypeLabel}}</p>
+                <p class="pInvestValueT">{{lumpsumTransData.investDetails[0].investType}}</p>
+            </ion-col>
+          </ion-row>          
+        </div>
+        <ion-row class="rowTransId">
+          <p>{{lumpsumTransData.investDetails[0].id}}</p>
+          <img src="../../../assets/Images/copy_gray.svg" alt="">
+        </ion-row>
+      </ion-card>
+    </div>
+
+    <div class="divTransStatusDetail">
+      <p>{{lumpsumTransData.transTrack[0].transTrackStLabel}}</p>
+
+    </div>
+  </div>
+</ion-content>
+
+<ion-button routerLink="/esign1" class="ion-button1">E-Sign</ion-button>

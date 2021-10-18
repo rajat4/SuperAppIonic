@@ -1,0 +1,28 @@
+
+  <ion-header translucent>
+    <ion-toolbar class="toolbar">
+
+      <ion-buttons slot="start">
+        <ion-button (click)="goToRobo2()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      <ion-title>Robo Advisory 3</ion-title>
+
+      <ion-buttons slot="end">
+        <ion-button (click)="goToRobo4()">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen class="ion-padding">
+    <p>This is the 3rd Page of Robo Advisory</p>
+  </ion-content>
+
+  <ion-footer>
+    <ion-button expand="block" (click)="goToRobo4()">Robo Page 4</ion-button>
+  </ion-footer>

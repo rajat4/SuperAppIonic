@@ -1,0 +1,975 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SupperAppIonic documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">SupperAppIonic documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  SignUpPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/Pages/sign-up/sign-up.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-sign-up</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sign-up.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sign-up.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#GmailContent" >GmailContent</a>
+                            </li>
+                            <li>
+                                <a href="#languageType" >languageType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalCtrl" >modalCtrl</a>
+                            </li>
+                            <li>
+                                <a href="#myLabels" >myLabels</a>
+                            </li>
+                            <li>
+                                <a href="#showModal" >showModal</a>
+                            </li>
+                            <li>
+                                <a href="#SMGSuccessGmail" >SMGSuccessGmail</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#close" >close</a>
+                            </li>
+                            <li>
+                                <a href="#GetDynamicData" >GetDynamicData</a>
+                            </li>
+                            <li>
+                                <a href="#LoginWithPhone" >LoginWithPhone</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#showSMGSuccessGmail" >showSMGSuccessGmail</a>
+                            </li>
+                            <li>
+                                <a href="#signInWithGoogle" >signInWithGoogle</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_dynamicData: <a href="../injectables/DynamicTempleteService.html" target="_self">DynamicTempleteService</a>, modalCtrl: ModalController, _router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:17</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_dynamicData</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DynamicTempleteService.html" target="_self" >DynamicTempleteService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="close"></a>
+                    <span class="name">
+                        <span ><b>close</b></span>
+                        <a href="#close"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>close()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GetDynamicData"></a>
+                    <span class="name">
+                        <span ><b>GetDynamicData</b></span>
+                        <a href="#GetDynamicData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>GetDynamicData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LoginWithPhone"></a>
+                    <span class="name">
+                        <span ><b>LoginWithPhone</b></span>
+                        <a href="#LoginWithPhone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>LoginWithPhone()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showSMGSuccessGmail"></a>
+                    <span class="name">
+                        <span ><b>showSMGSuccessGmail</b></span>
+                        <a href="#showSMGSuccessGmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showSMGSuccessGmail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="signInWithGoogle"></a>
+                    <span class="name">
+                        <span ><b>signInWithGoogle</b></span>
+                        <a href="#signInWithGoogle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>signInWithGoogle()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="GmailContent"></a>
+                    <span class="name">
+                        <span ><b>GmailContent</b></span>
+                        <a href="#GmailContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:14</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="languageType"></a>
+                    <span class="name">
+                        <span ><b>languageType</b></span>
+                        <a href="#languageType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;en&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modalCtrl"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>modalCtrl</b></span>
+                        <a href="#modalCtrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ModalController</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="myLabels"></a>
+                    <span class="name">
+                        <span ><b>myLabels</b></span>
+                        <a href="#myLabels"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showModal"></a>
+                    <span class="name">
+                        <span ><b>showModal</b></span>
+                        <a href="#showModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:12</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="SMGSuccessGmail"></a>
+                    <span class="name">
+                        <span ><b>SMGSuccessGmail</b></span>
+                        <a href="#SMGSuccessGmail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/Pages/sign-up/sign-up.page.ts:13</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { ModalController } from &#x27;@ionic/angular&#x27;;
+import { DynamicTempleteService } from &#x27;src/app/Services/dynamic-templete.service&#x27;;
+
+@Component({
+  selector: &#x27;app-sign-up&#x27;,
+  templateUrl: &#x27;./sign-up.page.html&#x27;,
+  styleUrls: [&#x27;./sign-up.page.scss&#x27;],
+})
+export class SignUpPage implements OnInit {
+  showModal: boolean &#x3D; false;
+  SMGSuccessGmail: boolean &#x3D; false;
+  GmailContent: boolean &#x3D; true;
+
+  languageType: String &#x3D; &quot;en&quot;;
+  myLabels: any;
+
+  constructor(private _dynamicData: DynamicTempleteService, public modalCtrl: ModalController, private _router: Router) {
+    this.GetDynamicData()
+  }
+
+  ngOnInit() {
+  }
+
+  GetDynamicData() {
+  this._dynamicData.GetSignUpLabels(this.languageType).subscribe(data &#x3D;&gt; {
+      if (data) {
+        // console.log(&quot;languageType &quot; + data.headerTitle)
+        this.myLabels &#x3D; data;
+      }
+    });
+
+    if (this.languageType &#x3D;&#x3D; &quot;en&quot;) {
+      this.languageType &#x3D; &quot;hn&quot;
+    } else {
+      this.languageType &#x3D; &quot;en&quot;
+    }
+  }
+
+  LoginWithPhone() {
+    this._router.navigate([&#x27;../LoginWithPhone&#x27;]);
+  }
+
+  close() {
+    this.showModal &#x3D; false;
+  }
+  signInWithGoogle() {
+    this.showModal &#x3D; true;
+  }
+
+  showSMGSuccessGmail() {
+    // this._router.navigate([&#x27;../SupperAppLanding&#x27;]);
+    this._router.navigate([&#x27;../BasicMode&#x27;]);
+    // this.SMGSuccessGmail&#x3D; true;
+    // this.GmailContent&#x3D; false
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content&gt;
+    &lt;!-- &lt;div class&#x3D;&quot;container&quot;&gt; --&gt;
+    &lt;div class&#x3D;&quot;cc_padding30px&quot; *ngIf&#x3D;&quot;myLabels !&#x3D; null&quot;&gt;
+        &lt;ion-grid class&#x3D;&quot;ion-no-padding&quot;&gt;
+            &lt;ion-row class&#x3D;&quot;ion-no-padding&quot;&gt;
+                &lt;ion-col&gt;
+                    &lt;div class&#x3D;&quot;LogoHolder&quot;&gt;
+                        &lt;div class&#x3D;&quot;logoContent&quot;&gt;
+                            &lt;img src&#x3D;&quot;{{myLabels.logo}}&quot;&gt;
+                            &lt;p&gt;{{myLabels.brandName}}&lt;/p&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+
+            &lt;ion-row&gt;
+                &lt;ion-col&gt;
+                    &lt;div class&#x3D;&quot;contentHolder&quot;&gt;
+                        &lt;h4&gt;{{myLabels.title1}}&lt;/h4&gt;
+                        &lt;h3&gt;{{myLabels.title2}}&lt;/h3&gt;
+                        &lt;hr&gt;
+                        &lt;p&gt;{{myLabels.title3}}&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+        &lt;/ion-grid&gt;
+
+        &lt;div class&#x3D;&quot;cc_margin &quot;&gt;
+            &lt;ion-item lines&#x3D;&quot;none&quot;&gt;
+                &lt;ion-checkbox color&#x3D;&quot;secondary&quot; checked slot&#x3D;&quot;start&quot;&gt;&lt;/ion-checkbox&gt;
+                &lt;ion-label class&#x3D;&quot;cc_NoLabel&quot;&gt;{{myLabels.tncLabel1}}&lt;a href&#x3D;&quot;{{myLabels.tncLabel2}}&quot;&gt;{{myLabels.tncLabel3}}&lt;/a&gt;&lt;/ion-label&gt;
+            &lt;/ion-item&gt;
+            &lt;ion-grid class&#x3D;&quot;ion-no-padding&quot;&gt;
+                &lt;ion-row class&#x3D;&quot;ion-no-padding&quot;&gt;
+                    &lt;ion-col size&#x3D;&quot;12&quot; size-sm&gt;
+                        &lt;div&gt;
+                            &lt;ion-button expand&#x3D;&quot;block&quot; fill&#x3D;&quot;outline&quot; class&#x3D;&quot;lowercase&quot; (click)&#x3D;&quot;LoginWithPhone()&quot;&gt;
+                                &lt;ion-img src&#x3D;&quot;{{myLabels.signupIcon1}}&quot;&gt;&lt;/ion-img&gt;
+                                {{myLabels.signupLabel1}}
+                            &lt;/ion-button&gt;
+                        &lt;/div&gt;
+                    &lt;/ion-col&gt;
+                    &lt;ion-col size&#x3D;&quot;12&quot; size-sm&gt;
+                        &lt;div&gt;
+                            &lt;ion-button expand&#x3D;&quot;block&quot; fill&#x3D;&quot;outline&quot; class&#x3D;&quot;lowercase&quot; (click)&#x3D;&quot;signInWithGoogle()&quot;&gt;
+                                &lt;ion-img src&#x3D;&quot;{{myLabels.signupIcon2}}&quot;&gt;&lt;/ion-img&gt;
+                                {{myLabels.signupLabel2}}
+                            &lt;/ion-button&gt;
+                        &lt;/div&gt;
+                    &lt;/ion-col&gt;
+                    &lt;ion-col size&#x3D;&quot;12&quot; size-sm&gt;
+                        &lt;div&gt;
+                            &lt;ion-button expand&#x3D;&quot;block&quot; fill&#x3D;&quot;outline&quot; class&#x3D;&quot;lowercase&quot; (click)&#x3D;&quot;signInWithInsta()&quot;&gt;
+                                &lt;ion-img src&#x3D;&quot;{{myLabels.signupIcon3}}&quot;&gt;&lt;/ion-img&gt;
+                                {{myLabels.signupLabel3}}
+                            &lt;/ion-button&gt;
+                        &lt;/div&gt;
+                    &lt;/ion-col&gt;
+                &lt;/ion-row&gt;
+
+                &lt;ion-row&gt;
+                    &lt;ion-col size&#x3D;&quot;6&quot; size-sm&gt;
+                        &lt;div&gt;
+                            &lt;a href&#x3D;&quot;{{myLabels.signupUrl4}}&quot; (click)&#x3D;&quot;signInWithFB()&quot;&gt;{{myLabels.signupLabel4}}&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/ion-col&gt;
+                    &lt;ion-col size&#x3D;&quot;6&quot; size-sm&gt;
+                        &lt;div class&#x3D;&quot;text-right&quot;&gt;
+                            &lt;a href&#x3D;&quot;{{myLabels.signupUrl5}}&quot;&gt;{{myLabels.signupLabel5}}&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/ion-col&gt;
+                &lt;/ion-row&gt;
+            &lt;/ion-grid&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- &lt;/div&gt; --&gt;
+&lt;/ion-content&gt;
+
+
+&lt;!-- The Modal --&gt;
+&lt;div id&#x3D;&quot;myModal&quot; class&#x3D;&quot;modal&quot; *ngIf&#x3D;&quot;showModal&quot;&gt;
+
+    &lt;!-- Modal content --&gt;
+    &lt;div class&#x3D;&quot;modal-content&quot; *ngIf&#x3D;&quot;GmailContent&quot;&gt;
+         &lt;ion-icon class&#x3D;&quot;text-center cc_downArrow&quot; name&#x3D;&quot;chevron-down-outline&quot; (click)&#x3D;&quot;close();&quot;&gt;&lt;/ion-icon&gt; 
+        
+        &lt;!--&lt;div class&#x3D;&quot;cc_downArrowIcon&quot;&gt;
+        &lt;img name&#x3D;&quot;chevron-down-outline&quot; (click)&#x3D;&quot;close();&quot;&gt;
+        &lt;/div&gt;--&gt;
+        
+        &lt;!-- &lt;span class&#x3D;&quot;close&quot; (click)&#x3D;&quot;close();&quot;&gt;&amp;times;&lt;/span&gt; --&gt;
+        &lt;p class&#x3D;&quot;modalTitle&quot;&gt;{{myLabels.gmailModel[0].title}}&lt;/p&gt;
+        &lt;ion-item (click)&#x3D;&quot;showSMGSuccessGmail()&quot; lines&#x3D;&quot;none&quot;&gt;
+            &lt;ion-avatar slot&#x3D;&quot;start&quot;&gt;
+                &lt;ion-icon class&#x3D;&quot;personIcon&quot; name&#x3D;&quot;person-circle&quot;&gt;&lt;/ion-icon&gt;
+                &lt;!-- &lt;img src&#x3D;&quot;https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d&#x3D;identicon&amp;f&#x3D;y&quot;&gt; --&gt;
+            &lt;/ion-avatar&gt;
+            &lt;ion-label&gt;
+                &lt;h3&gt;{{myLabels.gmailModel[0].emails[0].name}}&lt;/h3&gt;
+                &lt;p class&#x3D;&quot;cc_label&quot;&gt;{{myLabels.gmailModel[0].emails[0].email}}&lt;/p&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;ion-item lines&#x3D;&quot;none&quot;&gt;
+            &lt;ion-avatar slot&#x3D;&quot;start&quot;&gt;
+                &lt;ion-icon class&#x3D;&quot;personOutline&quot; name&#x3D;&quot;person-add-outline&quot;&gt;&lt;/ion-icon&gt;
+                &lt;!-- &lt;img src&#x3D;&quot;https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d&#x3D;identicon&amp;f&#x3D;y&quot;&gt; --&gt;
+            &lt;/ion-avatar&gt;
+            &lt;ion-label class&#x3D;&quot;cc_NoMarginTop&quot;&gt;
+                &lt;h3 class&#x3D;&quot;addAccount&quot;&gt;{{myLabels.gmailModel[0].emails[1].name}}&lt;/h3&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;p class&#x3D;&quot;cc_note&quot;&gt;{{myLabels.gmailModel[0].note1}}&lt;a href&#x3D;&quot;{{myLabels.gmailModel[0].note2Url}}&quot;&gt;{{myLabels.gmailModel[0].note2}}&lt;/a&gt;{{myLabels.gmailModel[0].note3}}&lt;a href&#x3D;&quot;{{myLabels.gmailModel[0].note4Url}}&quot;&gt;{{myLabels.gmailModel[0].note4}}&lt;/a&gt;.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;modal-content&quot; *ngIf&#x3D;&quot;SMGSuccessGmail&quot;&gt;
+        &lt;ion-icon name&#x3D;&quot;checkmark-circle-outline&quot;&gt;&lt;/ion-icon&gt;
+        &lt;p&gt;{{myLabels.gmailModel.successMsg}}&lt;/p&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./sign-up.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content>    <!-- <div class="container"> -->    <div class="cc_padding30px" *ngIf="myLabels != null">        <ion-grid class="ion-no-padding">            <ion-row class="ion-no-padding">                <ion-col>                    <div class="LogoHolder">                        <div class="logoContent">                            <img src="{{myLabels.logo}}">                            <p>{{myLabels.brandName}}</p>                        </div>                    </div>                </ion-col>            </ion-row>            <ion-row>                <ion-col>                    <div class="contentHolder">                        <h4>{{myLabels.title1}}</h4>                        <h3>{{myLabels.title2}}</h3>                        <hr>                        <p>{{myLabels.title3}}</p>                    </div>                </ion-col>            </ion-row>        </ion-grid>        <div class="cc_margin ">            <ion-item lines="none">                <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>                <ion-label class="cc_NoLabel">{{myLabels.tncLabel1}}<a href="{{myLabels.tncLabel2}}">{{myLabels.tncLabel3}}</a></ion-label>            </ion-item>            <ion-grid class="ion-no-padding">                <ion-row class="ion-no-padding">                    <ion-col size="12" size-sm>                        <div>                            <ion-button expand="block" fill="outline" class="lowercase" (click)="LoginWithPhone()">                                <ion-img src="{{myLabels.signupIcon1}}"></ion-img>                                {{myLabels.signupLabel1}}                            </ion-button>                        </div>                    </ion-col>                    <ion-col size="12" size-sm>                        <div>                            <ion-button expand="block" fill="outline" class="lowercase" (click)="signInWithGoogle()">                                <ion-img src="{{myLabels.signupIcon2}}"></ion-img>                                {{myLabels.signupLabel2}}                            </ion-button>                        </div>                    </ion-col>                    <ion-col size="12" size-sm>                        <div>                            <ion-button expand="block" fill="outline" class="lowercase" (click)="signInWithInsta()">                                <ion-img src="{{myLabels.signupIcon3}}"></ion-img>                                {{myLabels.signupLabel3}}                            </ion-button>                        </div>                    </ion-col>                </ion-row>                <ion-row>                    <ion-col size="6" size-sm>                        <div>                            <a href="{{myLabels.signupUrl4}}" (click)="signInWithFB()">{{myLabels.signupLabel4}}</a>                        </div>                    </ion-col>                    <ion-col size="6" size-sm>                        <div class="text-right">                            <a href="{{myLabels.signupUrl5}}">{{myLabels.signupLabel5}}</a>                        </div>                    </ion-col>                </ion-row>            </ion-grid>        </div>    </div>    <!-- </div> --></ion-content><!-- The Modal --><div id="myModal" class="modal" *ngIf="showModal">    <!-- Modal content -->    <div class="modal-content" *ngIf="GmailContent">         <ion-icon class="text-center cc_downArrow" name="chevron-down-outline" (click)="close();"></ion-icon>                 <!--<div class="cc_downArrowIcon">        <img name="chevron-down-outline" (click)="close();">        </div>-->                <!-- <span class="close" (click)="close();">&times;</span> -->        <p class="modalTitle">{{myLabels.gmailModel[0].title}}</p>        <ion-item (click)="showSMGSuccessGmail()" lines="none">            <ion-avatar slot="start">                <ion-icon class="personIcon" name="person-circle"></ion-icon>                <!-- <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"> -->            </ion-avatar>            <ion-label>                <h3>{{myLabels.gmailModel[0].emails[0].name}}</h3>                <p class="cc_label">{{myLabels.gmailModel[0].emails[0].email}}</p>            </ion-label>        </ion-item>        <ion-item lines="none">            <ion-avatar slot="start">                <ion-icon class="personOutline" name="person-add-outline"></ion-icon>                <!-- <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"> -->            </ion-avatar>            <ion-label class="cc_NoMarginTop">                <h3 class="addAccount">{{myLabels.gmailModel[0].emails[1].name}}</h3>            </ion-label>        </ion-item>        <p class="cc_note">{{myLabels.gmailModel[0].note1}}<a href="{{myLabels.gmailModel[0].note2Url}}">{{myLabels.gmailModel[0].note2}}</a>{{myLabels.gmailModel[0].note3}}<a href="{{myLabels.gmailModel[0].note4Url}}">{{myLabels.gmailModel[0].note4}}</a>.</p>    </div>    <div class="modal-content" *ngIf="SMGSuccessGmail">        <ion-icon name="checkmark-circle-outline"></ion-icon>        <p>{{myLabels.gmailModel.successMsg}}</p>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AllWellnessComponent', 'selector': 'app-all-wellness'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BasicModeComponent', 'selector': 'app-basic-mode'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'DashboardPage', 'selector': 'app-dashboard'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HealthComponent', 'selector': 'app-health'},{'name': 'HealthWellnessComponent', 'selector': 'app-health-wellness'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'InvestPage', 'selector': 'app-invest'},{'name': 'InvestPage', 'selector': 'app-invest'},{'name': 'LifestyleComponent', 'selector': 'app-lifestyle'},{'name': 'LoginWithPhonePage', 'selector': 'app-login-with-phone'},{'name': 'LumpsumTransactionComponent', 'selector': 'app-lumpsum-transaction'},{'name': 'LumpsumTransactionHeaderComponent', 'selector': 'app-lumpsum-transaction-header'},{'name': 'MarketingScreenPage', 'selector': 'app-marketing-screen'},{'name': 'MfFilterComponent', 'selector': 'app-mf-filter'},{'name': 'MfHeaderComponent', 'selector': 'app-mf-header'},{'name': 'MfLandingWithKYCNotTransactionComponent', 'selector': 'app-mf-landing-with-kyc-not-transaction'},{'name': 'MfPageDetailsComponent', 'selector': 'app-mf-page-details'},{'name': 'MfPageHeaderComponent', 'selector': 'app-mf-page-header'},{'name': 'ProductListComponent', 'selector': 'app-product-list'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'SignUpPage', 'selector': 'app-sign-up'},{'name': 'SplashScreenPage', 'selector': 'app-splash-screen'},{'name': 'SupperAppLandingPage', 'selector': 'app-supper-app-landing'},{'name': 'WatchlistPage', 'selector': 'app-watchlist'},{'name': 'WatchlistPage', 'selector': 'app-watchlist'},{'name': 'WealthComponent', 'selector': 'app-wealth'},{'name': 'WealthWellnessComponent', 'selector': 'app-wealth-wellness'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SignUpPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SignUpPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

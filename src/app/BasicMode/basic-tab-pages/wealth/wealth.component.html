@@ -1,0 +1,131 @@
+<!-- <ion-content>
+<ion-searchbar showCancelButton="focus"></ion-searchbar>
+
+  <div class="mfLandingKYCntTrans" *ngIf="segmentModel === 'Mutual Fund'">
+
+    <div class="exploreFunds" *ngIf="expFund != null">
+
+      <div *ngIf="expFund[0].filterIcon != ''">
+        <ion-row>
+
+          <ion-col class="filterClass" size="6">
+            <ion-row>
+              <img src={{expFund[0].filterIcon}}>
+              <p class="filterlabel">Filter</p>
+            </ion-row>
+          </ion-col>
+
+          <ion-col class="returnClass" size="6">
+            <div>
+              <ion-row>
+                <p class="filterlabel">{{expFund[0].return}}</p>
+                <img src={{expFund[0].filterIcon}}>
+              </ion-row>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div *ngIf="expFund != null">
+
+        <div *ngFor="let exploreFunds of expFund[0].exploreFundsList;">
+          <ion-card (click)="navigateToAddToCart()">
+            <div *ngIf="exploreFunds.pinState == 'true'">
+              <ion-icon class="filledIcon" name="bookmark"></ion-icon>
+            </div>
+            <div *ngIf="exploreFunds.pinState != 'true'">
+              <ion-icon class="unFilledIcon" name="bookmark-outline"></ion-icon>
+            </div>
+
+            <div class="expFundListDiv">
+              <ion-row>
+                <ion-col size="2">
+                  <img src={{exploreFunds.productLogo}} alt="">
+                </ion-col>
+                <ion-col class="prodTCol" size="8">
+                  <div class="prodTDiv">
+                    <h2>{{exploreFunds.productName}}</h2>
+                  </div>
+
+                </ion-col>
+                <ion-col class="arrowForwardCol" size="2">
+                  <div class="arrowForwardDiv">
+                    <ion-icon class="arrowForwardIcon" name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </ion-col>
+              </ion-row>
+
+              <div class="expFundListAmountsDiv">
+                <ion-row>
+                  <ion-col size="3">
+                    <div>
+                      <p>{{exploreFunds.minInvLabel}}</p>
+                      <h2>{{exploreFunds.minInvValue}}</h2>
+                    </div>
+                  </ion-col>
+
+                  <ion-col size="6">
+                    <div>
+                      <p>{{exploreFunds.catReturnLabel}}</p>
+                      <ion-row>
+                        <h2>{{exploreFunds.minInvValue}}</h2>
+                        <ion-progress-bar value="0.5"></ion-progress-bar>
+                        <h2>{{exploreFunds.minInvValue}}</h2>
+                      </ion-row>
+                    </div>
+                  </ion-col>
+
+                  <ion-col size="3">
+                    <div>
+                      <p>{{exploreFunds.returnLabel}}</p>
+                      <div class="divBearish" *ngIf="exploreFunds.returnStatus == 'bearish'">
+                        <h2>&#9650; {{exploreFunds.returnValue}} </h2>
+                      </div>
+
+                      <div class="divBullish" *ngIf="exploreFunds.returnStatus != 'bearish'">
+                        <h2>&#9660; {{exploreFunds.returnValue}} </h2>
+                      </div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </div>
+
+            </div>
+
+          </ion-card>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div style="height: 100%;" *ngIf="segmentModel !== 'Mutual Fund'">
+    <h3 style="margin-top: 70%; text-align: center; width: 100%;">{{segmentModel}} Coming Soon..!</h3>
+  </div>
+
+</ion-content> -->
+
+<ion-content class="portfolio" *ngIf="myLabels != null">
+  <div class="mfPortfolio">
+    <h2 (click)="toggleAccordion(i)">
+      {{myLabels.titleLabel}}
+    
+      <!-- <span *ngIf="isMenuOpen">
+        <img src="../../../assets/Images/down_arrow.svg">
+      </span>
+      <span *ngIf="!isMenuOpen">
+        <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg">
+      </span> -->
+    </h2>
+    
+      <img class="cc_hr" src="../../../assets/Images/rectangle_6023.svg">
+
+      <ion-card [ngClass]="this.isMenuOpen ? 'active' : 'inactive'">
+        <img src="../../../assets/Images/wealth_portfolio.png" alt="">
+      </ion-card>
+
+    </div>
+    
+</ion-content>
