@@ -13,17 +13,17 @@ export class DynamicTempleteService {
   constructor(private httpclient: HttpClient) { }
 
   GetDynamicWealthData(): Observable<any> {
-    // return this.httpclient.get(this.APIDomain+'api/profile/GetExplicitDetails');
+  
     return this.httpclient.get('assets/templateData/wealthData.json');
   }
 
   GetDynamicHealthData(): Observable<any> {
-    // return this.httpclient.get(this.APIDomain+'api/profile/GetExplicitDetails');
+  
     return this.httpclient.get('assets/templateData/templateData.json');
   }
 
   GetDynamicAllWellnessData(): Observable<any> {
-    // return this.httpclient.get(this.APIDomain+'api/profile/GetExplicitDetails');
+ 
     return this.httpclient.get('assets/templateData/templateData.json');
   }
 

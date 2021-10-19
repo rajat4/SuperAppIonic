@@ -28,7 +28,7 @@ export class BasicModeComponent implements OnInit {
 
   fabClickState = "";
 
-  interactiveState: boolean = false;
+  iS: boolean = false;
   audioPlay: boolean = false;
   runGif: boolean = false;
 
@@ -49,7 +49,7 @@ export class BasicModeComponent implements OnInit {
   ngOnInit() {
 
     setTimeout(() => {
-      this.interactiveState = true;
+      this.iS = true;
 
       const cartAnimation = this.animationCtrl.create('cart-animation')
         .addElement(document.getElementById('myFab'))
@@ -83,7 +83,7 @@ export class BasicModeComponent implements OnInit {
 
     function interactiveEnable() {
       setTimeout(() => {
-        this.interactiveState = false;
+        this.iS = false;
       }, 1000);
     }
   }
@@ -140,8 +140,8 @@ export class BasicModeComponent implements OnInit {
     // fabClickState
     this.showFab = false;
     this.runGif = false;
-    if (this.interactiveState) {
-      this.interactiveState = false;
+    if (this.iS) {
+      this.iS = false;
       this.isVisible = true;
 
       const enterAnimation = (baseEl: any) => {
@@ -202,25 +202,18 @@ export class BasicModeComponent implements OnInit {
       this.showInteractiveModal = true;
 
     } else {
-      this.interactiveState = false;
+      this.iS = false;
       this.showInteractiveModal = false;
       this.showFab = true;
       this._router.navigate(['../SupperAppLanding']);
     }
   }
 
-  async pressed() {
-    // const toast = await this.toastController.create({
-    //   message: 'pressed',
-    //   duration: 2000
-    // });
-    // toast.present();
-  }
 
   async active() {
     this.runGif = true;
     this.audioPlay = true;
-    this.interactiveState = false;
+    this.iS = false;
     this.showFab = false;
     const toast = await this.toastController.create({
       message: 'We are listening to you...',
@@ -230,26 +223,19 @@ export class BasicModeComponent implements OnInit {
   }
 
   async released() {
-    // const toast = await this.toastController.create({
-    //   message: 'Your voice recorded successfully..!',
-    //   duration: 2000
-    // });
-    // toast.present();
     this.audioPlay = false;
-    // this.runGif = false;
   }
 
   close() {
     this.showModal = false;
     this.showFab = true;
     this.runGif = false;
-    this.interactiveState = false;
+    this.iS = false;
   }
 
   async closeInteractiveModal() {
     const enterAnimation = (baseEl: any) => {
       const backdropAnimation = this.animationCtrl.create()
-        // .addElement(baseEl.querySelector('ion-backdrop')!)
         .addElement(baseEl.querySelector('interactiveModel')!)
         .fromTo('opacity', '0.01', 'var(--backdrop-opacity)');
 
@@ -271,43 +257,31 @@ export class BasicModeComponent implements OnInit {
       return enterAnimation(baseEl).direction('reverse');
     }
 
-    // const modal = await this.modalController.create({
-    //   component: ModalPage,
-    //   enterAnimation,
-    //   leaveAnimation
-    // });
-
     const backdropAnimation = this.animationCtrl.create()
-      // .addElement(baseEl.querySelector('ion-backdrop')!)
+    
       .addElement(document.getElementById('interactiveModel')!)
       .fromTo('opacity', '0.01', 'var(--backdrop-opacity)');
 
     const wrapperAnimation = this.animationCtrl.create()
-      // .addElement(baseEl.querySelector('.modal-wrapper')!)
+  
       .addElement(document.getElementById('interactiveModel')!)
       .fromTo('transform', 'translateY(100px)', 'translateY(0px)')
-    // .keyframes([
-    //   { offset: 0, opacity: '0', transform: 'scale(0)' },
-    //   { offset: 1, opacity: '0.99', transform: 'scale(1)' }
-    // ]
-    // );
+    
 
     const interactiveReverse = this.animationCtrl.create()
-      // .addElement(document.getElementById('interactiveModel'))
       .easing('ease-out')
       .duration(1000)
       .addAnimation([backdropAnimation.direction('reverse'), wrapperAnimation.direction('reverse')]);
 
     interactiveReverse.play();
 
-    this.interactiveState = false;
+    this.iS = false;
     this.runGif = false;
-    // this.showInteractiveModal = false;    
     this.showFab = true;
 
     
     setTimeout(() => {
-      this.interactiveState = false;
+      this.iS = false;
       this.isVisible = false;
     }, 1000);
   }
@@ -315,7 +289,7 @@ export class BasicModeComponent implements OnInit {
   async openInteractiveAdd() {
     this.showInteractiveModal = false;
     this.runGif = false;
-    this.interactiveState = false;
+    this.iS = false;
     this.showFab = true;
     const toast = await this.toastController.create({
       message: 'Thank you...!',

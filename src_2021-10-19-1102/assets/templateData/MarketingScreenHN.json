@@ -1,0 +1,33 @@
+{
+   "templateName":"MarketingScreen",
+   "MarketingScreenNumber":3,
+   "screen":[
+      {
+         "logo":"assets/Images/Logo_transperent.png",
+         "image":"https://image.flaticon.com/icons/png/512/2719/2719515.png",
+         "title":"आपका स्वागत है ",
+         "title1":"भारत के पहले",
+         "paragraph":"स्मार्ट वेलनेस प्लेटफॉर्म में ",
+         "skipLabel":"छोड़ें",
+         "nextLabel":"आगे"
+      },
+      {
+         "logo":"assets/Images/Logo_transperent.png",
+         "image":"assets/Images/slider1.png",
+         "title":"आपकी सभी स्वास्थ्य आवश्यकताओं को पूरा करने के लिए एक बाज़ार",
+         "title1":"",
+         "paragraph":"हमारे शोध और विश्लेषणात्मक संपत्तियों की मदद से अच्छे निवेश निर्णय लें",
+         "skipLabel":"छोड़ें",
+         "nextLabel":"आगे"
+      },
+      {
+         "logo":"assets/Images/Logo_transperent.png",
+         "image":"assets/Images/slider2.png",
+         "title":"अपने धन को ट्रैक करने, बचाने, निवेश करने के लिए एक मंच",
+         "title1":"",
+         "paragraph":"विभिन्न प्रकार के वित्तीय उत्पादों, क्यूरेटेड बास्केट और विशेषज्ञ विश्लेषण के साथ सभी निवेश आवश्यकताओं के लिए वन स्टॉप।",
+         "skipLabel":"छोड़ें",
+         "nextLabel":"आगे"
+      }
+   ]
+}

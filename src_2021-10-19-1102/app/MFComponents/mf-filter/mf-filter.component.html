@@ -1,0 +1,85 @@
+<ion-header class="mfFilterheader">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon class="arrowBackIcon" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <h3 class="mfTitle">Filter</h3>
+
+    <ion-buttons class="btnClear" slot="end" (click)="btnClear()">
+      Clear All
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mfFilterMainDiv">
+    <ion-row class="row">
+
+      <ion-col class="leftCol" size="5">
+        <ion-list>
+          <ion-item (click)="filterItem('AMC')">AMC</ion-item>
+          <ion-item (click)="filterItem('Category')">Category</ion-item>
+          <ion-item (click)="filterItem('Rating')">Rating</ion-item>
+          <ion-item (click)="filterItem('Risk')">Risk</ion-item>
+          <ion-item (click)="filterItem('AvailInvest')">Available to invest</ion-item>
+          <ion-item (click)="filterItem('SortBy')">Sort By</ion-item>
+        </ion-list>
+      </ion-col>
+
+      <ion-col class="rightCol" size="7" style="margin: 0px; padding: 0px;" *ngIf="amcState">
+        <ion-list>
+          <ion-item class="searchItem">
+            <!-- <ion-item> -->
+            <ion-input>
+              Search by fund name
+            </ion-input>
+            <ion-icon class="test" name="search"></ion-icon>
+            <!-- </ion-item> -->
+
+          </ion-item>
+          
+          <ion-item>ICICI Mutual Fund</ion-item>
+          <ion-item>Axis Mutual Fund</ion-item>
+          <ion-item>DSP Mutual Fund</ion-item>
+          <ion-item>Edelweiss Mutual Fund</ion-item>
+          <ion-item>Canara Robeco Mutual...</ion-item>
+          <ion-item>Essel Mutual Fund</ion-item>
+          <ion-item>Franklin Templeton Mu...</ion-item>
+          <ion-item>ICICI Prudential</ion-item>
+        </ion-list>
+      </ion-col>
+
+      <ion-col class="rightCol" size="7" style="margin: 0px; padding: 0px;" *ngIf="categoryState">
+
+        <ion-list>
+          <ion-list-header>Debt Schemes</ion-list-header>
+        </ion-list>
+
+        <ion-list>
+          <ion-list-header>Equity Schemes</ion-list-header>
+          <ion-list>
+            <ion-item>Contra</ion-item>
+            <ion-item>Dividend Yield</ion-item>
+            <ion-item>ELSS</ion-item>
+            <ion-item>Flexi Cap</ion-item>
+          </ion-list>
+        </ion-list>
+
+        <ion-list>
+          <ion-list-header>Hybrid Schemes</ion-list-header>
+        </ion-list>
+
+        <ion-list>
+          <ion-list-header>Others Schemes</ion-list-header>
+        </ion-list>
+
+      </ion-col>
+
+    </ion-row>
+  </div>
+
+
+</ion-content>

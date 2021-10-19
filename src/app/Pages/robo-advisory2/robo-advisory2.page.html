@@ -1,38 +1,63 @@
 <ion-header translucent>
     <ion-toolbar class="toolbar">
+
       <ion-buttons slot="start">
         <ion-button (click)="goToRobo1()">
           <ion-icon name="arrow-back"></ion-icon>
         </ion-button>
       </ion-buttons>
+
       <ion-title>Robo Advisory 2</ion-title>
+
       <ion-buttons slot="end">
         <ion-button (click)="goToRobo3()">
           <ion-icon name="arrow-forward"></ion-icon>
         </ion-button>
       </ion-buttons>
+
     </ion-toolbar>
-  </ion-header>
-
-
+</ion-header>
 
 <ion-content fullscreen="true" class="ion-padding">
 
-  <label>Color Entered: {{color}}</label>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="/robo1">TorusSuperApp</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/robo1">Home</a></li>
+        <li><a routerLink="/robo1">Page 1</a></li>
+        <li><a routerLink="/robo2">Page 2</a></li>
+        <li><a routerLink="/robo3">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
 
- <h6>
-     <p>The Bhagavad Gita, or the song of God, was revealed by Lord Shree Krishna to Arjun on the threshold of the epic war of Mahabharata. A decisive battle between two sets of cousins, the Kauravas and the Pandavas, was just about to commence on the battlefield of Kurukshetra. A detailed account of the reasons that led to such a colossal war; is given under Introduction - The Setting of the Bhagavad Gita
 
-     </p>
-<p>
-    The Bhagavad Gita is primarily a conversation between Lord Shree Krishna and Arjun. However, the first chapter begins with a dialogue between King Dhritarashtra and his minister Sanjay. Dhritarashtra being blind, could not leave his palace in Hastinapur but was eager to know the ongoings of the battlefield
+<p class="gita">The Bhagavad Gita, or the song of God, was revealed by Lord Shree Krishna
+  to Arjun on the threshold of the epic war of Mahabharata. 
+  A decisive battle between two sets of cousins, the Kauravas and the Pandavas, 
+  was just about to commence on the battlefield of Kurukshetra. 
+  A detailed account of the reasons that led to such a colossal war; 
+  is given under Introduction - The Setting of the Bhagavad Gita
 </p>
 
-<p>
-    Sanjay was a disciple of Sage Ved Vyas, the author of the epic Mahabharata and several other Hindu scriptures. Sage Ved Vyas possessed a mystic ability to see and hear events occurring in distant places. He had bestowed upon Sanjay the miraculous power of distant vision. Therefore, Sanjay could see and hear, what transpired on the battleground of Kurukshetra, and gave a first-hand account to King Dhritarashtra while still being in his palace
+<p class="gita">
+    The Bhagavad Gita is primarily a conversation between Lord Shree Krishna and Arjun.
+     However, the first chapter begins with a dialogue between King Dhritarashtra and his minister Sanjay.
+      Dhritarashtra being blind, could not leave his palace in Hastinapur but was eager to know the
+       ongoings of the battlefield
 </p>
-</h6>
- 
+
+<p class="gita">
+    Sanjay was a disciple of Sage Ved Vyas, the author of the epic Mahabharata and several 
+    other Hindu scriptures. Sage Ved Vyas possessed a mystic ability to see and hear events
+     occurring in distant places. He had bestowed upon Sanjay the miraculous power of distant vision.
+      Therefore, Sanjay could see and hear, what transpired on the battleground of Kurukshetra,
+       and gave a first-hand account to King Dhritarashtra while still being in his palace
+</p>
+
 </ion-content>
 
 <ion-footer class="ion-footer">

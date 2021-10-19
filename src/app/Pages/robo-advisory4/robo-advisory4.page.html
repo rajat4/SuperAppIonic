@@ -24,12 +24,24 @@
   <div class="outer-content">
   This is the 4th Page of Robo Advisory
   </div>
- <div class="container">Enter Your Name</div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="/robo1">TorusSuperApp</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a routerLink="/robo1">Home</a></li>
+        <li><a routerLink="/robo1">Page 1</a></li>
+        <li><a routerLink="/robo2">Page 2</a></li>
+        <li><a routerLink="/robo3">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
 </ion-content>
 
 <ion-footer>
 
-    <ion-button expand="block" (click)="goToRoboHome()">
+    <ion-button expand="block" (click)="goToRobo1()">
       Home
     </ion-button>
 

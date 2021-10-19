@@ -1,0 +1,11 @@
+ion-fab{
+    margin-bottom: 55px;
+    ion-fab-button{
+        --background: var(--darkish_blue);
+        --background-activated: var(--darkish_blue);
+        --background-focused: var(--bright_cyan)
+    }
+    ion-img{
+        margin: 7px;
+    }
+}

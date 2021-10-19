@@ -150,7 +150,7 @@
                                 <a href="#filterTabs" >filterTabs</a>
                             </li>
                             <li>
-                                <a href="#interactiveState" >interactiveState</a>
+                                <a href="#iS" >iS</a>
                             </li>
                             <li>
                                 <a href="#isVisible" >isVisible</a>
@@ -965,10 +965,10 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="interactiveState"></a>
+                    <a name="iS"></a>
                     <span class="name">
-                        <span ><b>interactiveState</b></span>
-                        <a href="#interactiveState"><span class="icon ion-ios-link"></span></a>
+                        <span ><b>iS</b></span>
+                        <a href="#iS"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
@@ -1324,7 +1324,7 @@ export class BasicModeComponent implements OnInit {
 
   fabClickState &#x3D; &quot;&quot;;
 
-  interactiveState: boolean &#x3D; false;
+  iS: boolean &#x3D; false;
   audioPlay: boolean &#x3D; false;
   runGif: boolean &#x3D; false;
 
@@ -1345,7 +1345,7 @@ export class BasicModeComponent implements OnInit {
   ngOnInit() {
 
     setTimeout(() &#x3D;&gt; {
-      this.interactiveState &#x3D; true;
+      this.iS &#x3D; true;
 
       const cartAnimation &#x3D; this.animationCtrl.create(&#x27;cart-animation&#x27;)
         .addElement(document.getElementById(&#x27;myFab&#x27;))
@@ -1379,7 +1379,7 @@ export class BasicModeComponent implements OnInit {
 
     function interactiveEnable() {
       setTimeout(() &#x3D;&gt; {
-        this.interactiveState &#x3D; false;
+        this.iS &#x3D; false;
       }, 1000);
     }
   }
@@ -1436,8 +1436,8 @@ export class BasicModeComponent implements OnInit {
     // fabClickState
     this.showFab &#x3D; false;
     this.runGif &#x3D; false;
-    if (this.interactiveState) {
-      this.interactiveState &#x3D; false;
+    if (this.iS) {
+      this.iS &#x3D; false;
       this.isVisible &#x3D; true;
 
       const enterAnimation &#x3D; (baseEl: any) &#x3D;&gt; {
@@ -1498,7 +1498,7 @@ export class BasicModeComponent implements OnInit {
       this.showInteractiveModal &#x3D; true;
 
     } else {
-      this.interactiveState &#x3D; false;
+      this.iS &#x3D; false;
       this.showInteractiveModal &#x3D; false;
       this.showFab &#x3D; true;
       this._router.navigate([&#x27;../SupperAppLanding&#x27;]);
@@ -1516,7 +1516,7 @@ export class BasicModeComponent implements OnInit {
   async active() {
     this.runGif &#x3D; true;
     this.audioPlay &#x3D; true;
-    this.interactiveState &#x3D; false;
+    this.iS &#x3D; false;
     this.showFab &#x3D; false;
     const toast &#x3D; await this.toastController.create({
       message: &#x27;We are listening to you...&#x27;,
@@ -1539,7 +1539,7 @@ export class BasicModeComponent implements OnInit {
     this.showModal &#x3D; false;
     this.showFab &#x3D; true;
     this.runGif &#x3D; false;
-    this.interactiveState &#x3D; false;
+    this.iS &#x3D; false;
   }
 
   async closeInteractiveModal() {
@@ -1596,14 +1596,14 @@ export class BasicModeComponent implements OnInit {
 
     interactiveReverse.play();
 
-    this.interactiveState &#x3D; false;
+    this.iS &#x3D; false;
     this.runGif &#x3D; false;
     // this.showInteractiveModal &#x3D; false;    
     this.showFab &#x3D; true;
 
     
     setTimeout(() &#x3D;&gt; {
-      this.interactiveState &#x3D; false;
+      this.iS &#x3D; false;
       this.isVisible &#x3D; false;
     }, 1000);
   }
@@ -1611,7 +1611,7 @@ export class BasicModeComponent implements OnInit {
   async openInteractiveAdd() {
     this.showInteractiveModal &#x3D; false;
     this.runGif &#x3D; false;
-    this.interactiveState &#x3D; false;
+    this.iS &#x3D; false;
     this.showFab &#x3D; true;
     const toast &#x3D; await this.toastController.create({
       message: &#x27;Thank you...!&#x27;,

@@ -22,7 +22,7 @@ export class SupperAppLandingPage implements OnInit {
   greeting: string = "";
   recommendedAction: string = "";
 
-  interactiveState: boolean = false;
+  iS: boolean = false;
   audioPlay: boolean = false;
   runGif: boolean = false;
   isVisible: boolean = false;
@@ -52,7 +52,7 @@ export class SupperAppLandingPage implements OnInit {
     //   });
 
     setTimeout(() => {
-      this.interactiveState = true;
+      this.iS = true;
 
       const cartAnimation = this.animationCtrl.create('cart-animation')
         .addElement(document.getElementById('myFabSL'))
@@ -87,7 +87,7 @@ export class SupperAppLandingPage implements OnInit {
 
     function interactiveEnable() {
       setTimeout(() => {
-        this.interactiveState = false;
+        this.iS = false;
       }, 1000);
     }
 
@@ -96,8 +96,8 @@ export class SupperAppLandingPage implements OnInit {
     // fabClickState
     this.showFab = false;
     this.runGif = false;
-    if (this.interactiveState) {
-      this.interactiveState = false;
+    if (this.iS) {
+      this.iS = false;
       this.isVisible = true;
 
       const enterAnimation = (baseEl: any) => {
@@ -158,7 +158,7 @@ export class SupperAppLandingPage implements OnInit {
       this.showInteractiveModal = true;
 
     } else {
-      this.interactiveState = false;
+      this.iS = false;
       this.showInteractiveModal = false;
       this._router.navigate(['../BasicMode']);
     }
@@ -169,7 +169,7 @@ export class SupperAppLandingPage implements OnInit {
     this.showModal = false;
     this.showFab = true;
     this.runGif = false;
-    this.interactiveState = false;
+    this.iS = false;
   }
 
   async closeInteractiveModal() {
@@ -227,21 +227,18 @@ export class SupperAppLandingPage implements OnInit {
     interactiveReverse.play();
 
     setTimeout(() => {
-      this.interactiveState = false;
+      this.iS = false;
       this.isVisible = false;
     }, 1000);
 
-
-    // this.interactiveState = false;
     this.runGif = false;
-    // this.showInteractiveModal = false;    
     this.showFab = true;
   }
 
   async openInteractiveAdd() {
     this.showInteractiveModal = false;
     this.runGif = false;
-    this.interactiveState = false;
+    this.iS = false;
     this.showFab = true;
     const toast = await this.toastController.create({
       message: 'Thank you...!',
@@ -261,41 +258,14 @@ export class SupperAppLandingPage implements OnInit {
           this.recommendedAction = data[0].description;
         }
       }
-      //   if (data.IsSuccess) {        
-      //     if (data.ExpilicitContent != "" && data.IsExpilicit == "Y") {  
-      //         this.ShowExplicitContent = true;          
-      //         this.ExplicitCode = data.ExpilicitCode;
-      //         this.ExplicitContent = data.ExpilicitContent;
-      //         this.ExplicitFlag = "Y";            
-      //     }
-      //     else if (data.ExpilicitContent != "" && data.IsExpilicit == "N") {  
-      //       this.ShowExplicitContent = true;          
-      //       this.ExplicitCode = data.ExpilicitCode;
-      //       this.ExplicitContent = data.ExpilicitContent;
-      //       this.ExplicitFlag = "N";            
-      //     }
-      //     else {
-      //         this.ShowExplicitContent = false;
-      //         this.ExplicitCode = "";
-      //         this.ExplicitContent = "";
-      //         this.ExplicitFlag = "";
-      //     }
-      // }
+     
     });
-  }
-
-  async pressed() {
-    // const toast = await this.toastController.create({
-    //   message: 'pressed',
-    //   duration: 2000
-    // });
-    // toast.present();
   }
 
   async active() {
     this.audioPlay = true;
     this.runGif = true;
-    this.interactiveState = false;
+    this.iS = false;
     this.showFab = false;
     const toast = await this.toastController.create({
       message: 'We are listening to you...',
@@ -305,12 +275,7 @@ export class SupperAppLandingPage implements OnInit {
   }
 
   async released() {
-    // const toast = await this.toastController.create({
-    //   message: 'Your voice recorded successfully..!',
-    //   duration: 2000
-    // });
-    // toast.present();
-
+ 
     this.audioPlay = false;
   }
 
