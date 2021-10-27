@@ -1,0 +1,103 @@
+<app-header></app-header>
+<div class="basicmode" *ngIf="myLabels != null">
+  <hr>
+  <ion-toolbar padding>
+    <ion-segment (ionChange)="categoryChanged($event)" [(ngModel)]="segmentModel" value="chicken" scrollable=true
+      scrollbar="false">
+      <ion-segment-button *ngFor="let filterTab of filterTabs" value="{{filterTab.tabName}}">
+        {{filterTab.tabName}}
+      </ion-segment-button>
+    </ion-segment>
+
+  </ion-toolbar>
+
+  <ion-searchbar showCancelButton="never" showClearButton="never" placeholder="{{myLabels.searchHint}}"></ion-searchbar>
+</div>
+
+<ion-content *ngIf="myLabels != null">
+
+  <!-- The Modal -->
+  <div [style.display]="isVisible ? 'block' : 'none'">
+    <div class="interactive-modal-content" id="interactiveModel" >
+      <span class="closeInteractive" (click)="closeInteractiveModal();">&times; {{myLabels.closeLable}} </span>
+      <ion-card (click)="openInteractiveAdd();">
+        <img src="../assets/Images/interactive_sample.jpg">
+      </ion-card>
+    </div>
+  </div>
+
+
+  <div class="modal" *ngIf="runGif">
+    <audio autoplay>
+      <source src="../assets/alert_tone/hey_torus.mp3" type="audio/mpeg">
+    </audio>
+    <div class="interactive-modal-content">
+      <span class="closeInteractive" (click)="closeInteractiveModal();">&times; {{myLabels.closeLable}} </span>
+      <ion-card (click)="openInteractiveAdd();">
+        <img src="../assets/gif_anim/speechrecognitionview.gif">
+      </ion-card>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="SMGSuccessGmail" class="modal" *ngIf="showModal">
+
+    <!-- Modal content -->
+    <div class="modal-content" (click)="close()">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <p>{{myLabels.successMsgGmail}}</p>
+      <p>supperapp@gmail.com</p>
+    </div>
+
+  </div>
+
+
+  <!-- The Modal -->
+  <div id="showModalSMGSuccesPhone" class="modal" *ngIf="showModalSMGSuccesPhone">
+
+    <div class="modal-content" (click)="close();">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <p>{{myLabels.successMsgPhone}}{{EnteredMobileNumber}}</p>
+    </div>
+
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="showFab">
+    <ion-fab-button id="myFab" (click)="fabClick()" ion-long-press [interval]="400" (pressed)="pressed()"
+      (longPressed)="active()" (pressEnded)="released()" size="small">
+      <ion-img src="../assets/Images/torus_logo_transperent_svg.svg"></ion-img>
+    </ion-fab-button>
+  </ion-fab>
+
+  <footer>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="wealth" layout="icon-top">
+          <ion-icon src="/assets/bottom_tab/wealth.svg"></ion-icon>
+          <ion-label>{{myLabels.wealthLable}}</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="health" layout="icon-top">
+          <ion-icon src="/assets/bottom_tab/bag-add-outline.svg"></ion-icon>
+          <ion-label>{{myLabels.healthLable}}</ion-label>
+        </ion-tab-button>
+
+
+        <ion-tab-button tab="education" layout="icon-top">
+          <ion-icon src="/assets/bottom_tab/book-outline.svg"></ion-icon>
+          <ion-label>{{myLabels.educationLable}}</ion-label>
+        </ion-tab-button>
+
+
+        <ion-tab-button tab="lifestyle" layout="icon-top">
+          <ion-icon src="/assets/bottom_tab/lifestyle.svg"></ion-icon>
+          <ion-label>{{myLabels.lifestyleLable}}</ion-label>
+        </ion-tab-button>
+
+
+      </ion-tab-bar>
+
+    </ion-tabs>
+  </footer>
+
+</ion-content>

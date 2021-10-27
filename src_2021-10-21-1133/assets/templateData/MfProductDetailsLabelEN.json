@@ -1,0 +1,34 @@
+{
+   "icon1":"/assets/Images/sip_calendar.svg",
+   "btnName1":"Start Sip",
+   "icon2":"/assets/Images/cart.svg",
+   "btnName2":"Add To Cart",
+   "icon3":"/assets/Images/copy.svg",
+   "btnName3":"Compare",
+   "icon4":"/assets/Images/share.svg",
+   "btnName4":"Share",
+   "btnInvest":"Invest now",
+   "plsBtnToggle":"/assets/Images/plus_btn.svg",
+   "cancelBtnToggle":"/assets/Images/cancel_close_btn.svg",
+   "addToCartModel":[
+      {
+         "title":"How would you like to invest?",
+         "intestType1":"Monthly Investment",
+         "intestTypeVal1":"SIP",
+         "intestType2":"One Time Investment",
+         "intestTypeVal2":"Lumpsum",
+         "enterAmLabel":"Enter investment amount",
+         "minLimit":"Minimum SIP amount is ",
+         "tncLabel1":"By continuing. I agree with the ",
+         "tncLabel2":"#",
+         "tncLabel3":"Disclaimers",
+         "tncLabel4":" and ",
+         "tncLabel5":"#",
+         "tncLabel6":"Terms & Conditions",
+         "tncLabel7":" of Torus",
+		 "icon1":"/assets/Images/cart.svg",
+         "btnName1":"Add To Cart",
+         "btnName2":"Invest now"
+      }
+   ]
+}

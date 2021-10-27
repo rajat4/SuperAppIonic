@@ -1,0 +1,41 @@
+
+  <ion-header translucent>
+    <ion-toolbar class="toolbar">
+
+      <ion-buttons slot="start">
+        <ion-button (click)="goToRobo2()">
+          <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      <ion-title>Robo Advisory 3</ion-title>
+
+      <ion-buttons slot="end">
+        <ion-button (click)="goToRobo4()">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content fullscreen class="ion-padding">
+    <div class="container">This is the 3rd Page of Robo Advisory</div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" routerLink="/robo1">TorusSuperApp</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a routerLink="/robo1">Home</a></li>
+          <li><a routerLink="/robo1">Page 1</a></li>
+          <li><a routerLink="/robo2">Page 2</a></li>
+          <li><a routerLink="/robo3">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+  </ion-content>
+
+  <ion-footer>
+    <ion-button expand="block" (click)="goToRobo4()">Robo Page 4</ion-button>
+  </ion-footer>

@@ -1,0 +1,30 @@
+<ion-tabs *ngIf="myLabels != null">
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button (click)="redirectToBMLanding()" layout="icon-top">
+      <ion-icon src="{{myLabels.icon1}}"></ion-icon>
+      <ion-label>{{myLabels.label1}}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="dashboard" layout="icon-top">
+      <ion-icon src="{{myLabels.icon2}}"></ion-icon>
+      <ion-label>{{myLabels.label2}}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="invest" layout="icon-top">
+      <ion-icon src="{{myLabels.icon3}}"></ion-icon>
+      <ion-label>{{myLabels.label3}}</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="watchlist" layout="icon-top">
+      <ion-icon src="{{myLabels.icon4}}"></ion-icon>
+      <ion-label>{{myLabels.label4}}</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile" layout="icon-top">
+      <ion-icon src="{{myLabels.icon5}}"></ion-icon>
+      <ion-label>{{myLabels.label5}}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

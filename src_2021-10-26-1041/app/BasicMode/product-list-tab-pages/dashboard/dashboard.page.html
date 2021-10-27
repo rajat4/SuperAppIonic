@@ -1,0 +1,105 @@
+<app-mf-header></app-mf-header>
+
+<ion-content class="SupperAppLandingPage">
+
+  <div class="mfLandingKYCntTrans">
+    <div class="exploreFunds" *ngIf="expFund != null">
+      <h2>{{expFund[0].title}}</h2>
+
+      <div *ngIf="expFund[0].filterIcon != ''">
+        <ion-row>
+
+          <ion-col class="filterClass" size="6" (click)="navigateToFilter()">
+            <ion-row>
+              <img src={{expFund[0].filterIcon}}>
+              <p class="filterlabel">{{expFund[0].filterLabel}}</p>
+            </ion-row>
+          </ion-col>
+
+          <ion-col class="returnClass" size="6">
+            <div>
+              <ion-row>
+                <p class="filterlabel">{{expFund[0].return}}</p>
+                <img src={{expFund[0].filterIcon}}>
+              </ion-row>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div *ngIf="expFund != null">
+
+        <div *ngFor="let exploreFunds of expFund[0].exploreFundsList;">
+          <ion-card (click)="navigateToAddToCart()">
+            <div *ngIf="exploreFunds.pinState == 'true'">
+              <ion-icon class="filledIcon" name="bookmark"></ion-icon>
+            </div>
+            <div *ngIf="exploreFunds.pinState != 'true'">
+              <ion-icon class="unFilledIcon" name="bookmark-outline"></ion-icon>
+            </div>
+
+            <div class="expFundListDiv">
+              <ion-row>
+                <ion-col size="2">
+                  <img src={{exploreFunds.productLogo}} alt="">
+                </ion-col>
+                <ion-col class="prodTCol" size="8">
+                  <div class="prodTDiv">
+                    <h2>{{exploreFunds.productName}}</h2>
+                  </div>
+                  
+                </ion-col>
+                <ion-col class="arrowForwardCol" size="2">
+                  <div class="arrowForwardDiv">
+                    <ion-icon class="arrowForwardIcon" name="chevron-forward-outline"></ion-icon>
+                  </div>
+                </ion-col>
+              </ion-row>
+
+              <div class="expFundListAmountsDiv">
+                <ion-row>
+                  <ion-col size="3">
+                    <div>
+                      <p>{{exploreFunds.minInvLabel}}</p>
+                      <h2>{{exploreFunds.minInvValue}}</h2>
+                    </div>
+                  </ion-col>
+                  
+                  <ion-col size="6">
+                    <div>
+                      <p>{{exploreFunds.catReturnLabel}}</p>
+                      <ion-row>
+                        <h2>{{exploreFunds.minInvValue}}</h2>
+                        <ion-progress-bar value="0.5"></ion-progress-bar>
+                        <h2>{{exploreFunds.minInvValue}}</h2>  
+                      </ion-row>
+                    </div>
+                  </ion-col>
+  
+                  <ion-col size="3">
+                    <div>
+                      <p>{{exploreFunds.returnLabel}}</p>
+                      <div class="divBearish" *ngIf="exploreFunds.returnStatus == 'bearish'">
+                        <h2>&#9650; {{exploreFunds.returnValue}} </h2>
+                      </div>
+
+                      <div class="divBullish" *ngIf="exploreFunds.returnStatus != 'bearish'">
+                        <h2>&#9660; {{exploreFunds.returnValue}} </h2>
+                      </div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </div>
+              
+            </div>
+
+          </ion-card>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+</ion-content>

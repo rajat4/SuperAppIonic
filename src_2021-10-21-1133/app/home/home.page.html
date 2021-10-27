@@ -1,0 +1,86 @@
+<!-- <div class="parent">
+    <div class="child">
+        <div class="popup">
+            <div class="loadingScreen animated fadeInUp">
+                <img class="zoom-in-zoom-out" src="../../assets/Images/Torus_Logo_with_shadow.png" />
+                <h1>
+                    <strong>Welcome</strong> to India's First
+                    <strong>Smart</strong> Wellness Ecosystem
+
+
+                </h1>
+                <ion-button expand="block" shape="round" [routerLink]="['/SignUp']">next
+                    <ion-icon name="arrow-forward-circle"></ion-icon>
+                </ion-button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<ion-slides pager="true" pager="true" #mySlider>
+
+    <ion-slide class="cc_bg">
+        <div class="parent">
+            <div class="child">
+                <div class="popup">
+                    <div class="loadingScreen animated fadeInUp">
+                        <!-- <img class="zoom-in-zoom-out" src="../../assets/Images/Torus_Logo_with_shadow.png" /> -->
+                        <img class="zoom-in-zoom-out" src="../../assets/Images/Logo_transperent.png" />
+                        <div class="box"></div>
+                        <h1 class="cc_position">Welcome to</h1>
+                        <h1>India's First</h1>
+                        <h1>
+                            <strong>
+                                Smart Wellness
+                                Platform</strong>
+                        </h1>
+                        <ion-button class="skip " (click)="skip()">Skip</ion-button>
+                        <ion-button class="next" (click)="swipeNext()">Next</ion-button>
+                        <!-- <ion-button expand="block" shape="round" [routerLink]="['/SignUp']">next
+                            <ion-icon name="arrow-forward-circle"></ion-icon>
+                        </ion-button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </ion-slide>
+
+    <ion-slide>
+        <div class="parent">
+            <div class="child slide">
+                <div class="popup">
+                    <div class="loadingScreen animated fadeInUp">
+                        <img class="cc_MarginTop89px" src="../../assets/Images/slider1.png" />
+                        <h2>One marketplace to fulfill all your health needs</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <ion-button class="skip cc_gray" (click)="skip()">Skip</ion-button>
+                        <ion-button class="next cc_blue" (click)="swipeNext()">Next</ion-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </ion-slide>
+
+    <ion-slide>
+        <div class="parent">
+            <div class="child slide">
+                <div class="popup">
+                    <div class="loadingScreen animated fadeInUp">
+                        <img class="cc_MarginTop89px" src="../../assets/Images/slider2.png" />
+                        <h2>One platform to track, save, invest your wealth</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <ion-button class="skip cc_gray" (click)="skip()">Skip</ion-button>
+                        <ion-button class="next cc_blue" [routerLink]="['/SignUp']">Next</ion-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </ion-slide>
+
+
+</ion-slides>

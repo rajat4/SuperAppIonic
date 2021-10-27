@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToEsign1()">
+        <ion-icon name="chevron-back-outline" class="btn-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title><h6>Setup Investment Account</h6></ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="goToHome()">
+        <ion-icon name="close" class="btn-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+</ion-toolbar>
+<ion-progress-bar value="0.5819" color="success"></ion-progress-bar>
+</ion-header>
+
+<ion-content class="outer-content" [fullscreen]="true">
+
+  <div class="div-yourprogress">
+    <div class="ion-padding">
+      <strong> Your signature </strong>
+      <p> Signature is mandatory to submit KYC details. </p>
+    </div>
+  </div>
+  <div class="div-3">
+<img src="assets/Images/Signature.svg" alt="Signature.svg">
+  </div>
+</ion-content>
+
+<span class="btn-bottom">   
+     
+    <ion-button routerLink="/esign1" expand="outline" class="ion-button2">Try Again</ion-button>  
+   
+    <ion-button routerLink="/aadhaar" class="ion-button2">Confirm</ion-button>  
+ 
+</span>

@@ -1,0 +1,47 @@
+{
+   "logo":"assets/Images/Logo_transperent.png",
+   "brandName":"TORUS",
+   "title1":"Smart",
+   "title2":" Wellness",
+   "title3":"Wealth",
+   "tncLabel1":"आगे बढ़ने पर, मैं इससे सहमत हूं",
+   "tncLabel2":"#",
+   "tncLabel3":" नियम और शर्तें",
+   "signupIcon1":"assets/Images/call.svg",
+   "signupUrl1":"#",
+   "signupLabel1":"मोबाइल से साइन अप",
+   "signupIcon2":"assets/Images/google.svg",
+   "signupUrl2":"#",
+   "signupLabel2":"गूगल से साइन अप",
+   "signupIcon3":"assets/Images/insta.svg",
+   "signupUrl3":"#",
+   "signupLabel3":"इंस्टाग्राम से साइन अप",
+   "signupIcon4":"",
+   "signupUrl4":"#",
+   "signupLabel4":"फेसबुक का प्रयोग करें",
+   "signupIcon5":"",
+   "signupUrl5":"#",
+   "signupLabel5":"अन्य ईमेल आईडी का प्रयोग करें",
+   "gmailModel":[
+      {
+         "title":"जारी रखने के लिए एक खाता चुनें",
+         "note1":"जारी रखने के लिए, गूगल आपका नाम, ईमेल पता और प्रोफ़ाइल चित्र टोरस के साथ साझा करेगा। इस ऐप का उपयोग करने से पहले, इसकी समीक्षा करें",
+         "note2":"गोपनीयता नीति",
+         "note2Url":"https://www.reliancesmartmoney.com/",
+         "note3":" तथा ",
+         "note4":"सेवा की शर्तें",
+         "note4Url":"https://www.reliancesmartmoney.com/",
+         "successMsg":"अब आप लॉग इन हैं supperapp@gmail.com",
+         "emails":[
+            {
+               "name":"सुपर ऐप मेल",
+               "email":"supperapp@gmail.com"
+            },
+            {
+               "name":"कोई अन्य खाता जोड़ें",
+               "email":""
+            }
+         ]
+      }
+   ]
+}

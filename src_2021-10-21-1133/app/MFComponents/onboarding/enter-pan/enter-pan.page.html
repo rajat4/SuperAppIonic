@@ -1,0 +1,97 @@
+
+<ion-header class="header">
+  
+  <span  class="a" lines="none">
+
+    <ion-row>
+    
+          <ion-button fill="none" style="color:blue;">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </ion-button>
+
+          <span class="toolbarTitle">Setup Investment Account</span>
+  
+          <ion-button  fill="none" style="color:#003399;">
+            <ion-icon name="close"></ion-icon>
+          </ion-button>
+
+    </ion-row>
+     
+  </span>
+
+</ion-header>
+
+<!-- <app-mf-page-header></app-mf-page-header> -->
+
+<ion-content fullscreen="false" class="outer-content">
+
+  <div style="padding:2px; font-family:muli-regular;">
+
+    <ion-card id="grad">
+      <ion-title class="eyp">
+        Enter your PAN
+      </ion-title>
+      <div class="pim">
+        PAN is mandatory for investing in mutual funds
+      </div>
+
+      <ion-item class="eyp-input">
+        <ion-input name="PAN_Number"
+                   placeholder="Enter your PAN" 
+                   type="password"
+                   #mysecretpassword 
+                   class="enter-pan-input">{{PAN_Number}}
+                   
+        </ion-input>
+
+        <img class="eye" src="../../../assets/Images/eye_svg.svg" #eye 
+        (click)="togglePassword(mysecretpassword,eye)">
+
+      </ion-item>
+
+
+      <div style="padding-top: 20px; text-align: center;">
+        <ion-text class="OrScan">
+          Or </ion-text>
+          <img src="assets/icon/scan.svg" alt="QR" id="img-qr">
+          <ion-text class="OrScan">
+            Scan </ion-text>
+       
+      </div>
+
+    </ion-card>
+  </div>
+</ion-content>
+
+<strong class="strong">
+  You may need to add few more details to start with your investments
+</strong>
+
+<ion-row class="authorize">
+  <ion-col size="0.8" style="align-items: center; padding: 0;">
+    <ion-checkbox color="secondary" class="ic" style=""></ion-checkbox>
+  </ion-col>
+  <ion-col size="11" style="padding:0%;">
+    <p class="authorize-paragraph"> I Authorize Torus to Conduct / Verify as per their
+      <a target="_blank" rel="noopener noreferrer" href="https://www.reliancesmartmoney.com/terms-conditions"
+        style="color:blue">Terms & Conditions
+      </a>
+    </p>
+  </ion-col>
+</ion-row>
+
+<div class="safe">
+
+  <ion-col>
+    <img src="/assets/icon/lock.svg" alt="secure" id="img">
+  </ion-col>
+
+  <ion-col id="PANcardDetails">
+    Your PAN card details are safe with us
+  </ion-col>
+
+</div>
+
+<div class="b">
+  <ion-button class="a" fill="full" expand="block" (click)="pushPage()">Continue</ion-button>
+</div>

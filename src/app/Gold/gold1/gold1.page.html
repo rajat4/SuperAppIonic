@@ -1,0 +1,250 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    
+    <ion-buttons slot="start">
+      <ion-button routerLink="/bank4">
+        <ion-icon name="chevron-back-outline" class="blue"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>Gold 1</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/gold2">
+        <ion-icon name="share" class="blue"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/gold2">
+        <ion-icon name="cart" class="blue"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding outer-content" fullscreen="true">
+
+  <ion-avatar slot="start">
+    <img src="./assets/icon/favicon.png">
+  </ion-avatar>
+  <ion-label>
+    <h3 class="MuliSemiBold">Augmont Digital Gold</h3>
+    <p></p>
+  </ion-label>
+
+  <ion-chip>
+    <ion-label>FAAA</ion-label>
+  </ion-chip>
+  
+  <ion-chip>
+    <ion-label>99.90% Purity</ion-label>
+  </ion-chip>
+
+  <ion-card>
+    <ion-icon name="graph"></ion-icon>
+    <div *ngIf="data">
+      <div class="ion-padding">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac eros est. Cras iaculis pulvinar arcu non vehicula. Fusce at quam a eros malesuada condimentum. Aliquam tincidunt tincidunt vehicula.
+      </div>
+    
+      <ion-list>
+        <ion-list-header>
+          <ion-label>
+            Data
+          </ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="./avatar.svg">
+          </ion-avatar>
+          <ion-label>
+            <h3>
+              {{ data.heading }}
+            </h3>
+            <p>
+              {{ data.para1 }}
+            </p>
+            <p>
+              {{ data.para2 }}
+            </p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="./thumbnail.svg">
+          </ion-thumbnail>
+          <ion-label>
+            <h3>
+              {{ data.heading }}
+            </h3>
+            <p>
+              {{ data.para1 }}
+            </p>
+            <p>
+              {{ data.para2 }}
+            </p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="call" slot="start"></ion-icon>
+          <ion-label>
+            <h3>
+              {{ data.heading }}
+            </h3>
+            <p>
+              {{ data.para1 }}
+            </p>
+            <p>
+              {{ data.para2 }}
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+    
+    <!-- Skeleton screen -->
+    <div *ngIf="!data">
+      <div class="ion-padding custom-skeleton">
+        <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+        <ion-skeleton-text animated></ion-skeleton-text>
+        <ion-skeleton-text animated style="width: 88%"></ion-skeleton-text>
+        <ion-skeleton-text animated style="width: 70%"></ion-skeleton-text>
+        <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+      </div>
+    
+      <ion-list>
+        <ion-list-header>
+          <ion-label>
+            <ion-skeleton-text animated style="width: 20%"></ion-skeleton-text>
+          </ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-avatar>
+          <ion-label>
+            <h3>
+              <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+            </h3>
+            <p>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+            </p>
+            <p>
+              <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-thumbnail>
+          <ion-label>
+            <h3>
+              <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+            </h3>
+            <p>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+            </p>
+            <p>
+              <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-skeleton-text animated style="width: 27px; height: 27px" slot="start"></ion-skeleton-text>
+          <ion-label>
+            <h3>
+              <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+            </h3>
+            <p>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+            </p>
+            <p>
+              <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-card>
+  <p>Details</p>
+
+  <div class="menuItem">
+    <h2 (click)="toggleAccordion(0)">
+        Money Makers
+        <span *ngIf="isMenuOpen">
+            <img src="../../../assets/Images/down_arrow.svg">
+        </span>
+        <span *ngIf="!isMenuOpen">
+            <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg">
+        </span>
+    </h2>
+    <ion-item class="ion-no-padding" *ngIf="isMenuOpen">
+        <div class="menuChildDiv">
+            <ion-row class="menuChildRow">
+                <ion-col class="menuChildImgCol" size="1">
+                    <img class="childImg"
+                        src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/F785146A-EE85-424F-9528-B95B7FB7E9C6.svg">
+                </ion-col>
+                <ion-col class="menuChildTitleCol" size="11">
+                   
+                    <ion-row class="menuChildTitleRow">
+                        <p class="childTitle">Mutual Funds
+                            <span> <img class="kycStateImg"
+                                    src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/89A53882-4BE3-49C3-9C9C-9F7D831AFEA2.svg">
+                            </span>
+                            <span class="kycStateSubTitle"> KYC - Investment ready</span>
+                        </p>
+                    </ion-row>
+
+                    <h6 class="childSubTitle">Your account is verified by Aqube. Start Investing
+                    </h6>
+                   
+                </ion-col>
+            </ion-row>
+        </div>
+        <div class="menuChildDiv">
+          <ion-row class="menuChildRow">
+              <ion-col class="menuChildImgCol" size="1">
+                  <img class="childImg"
+                      src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/3743A285-10D9-42BC-AC29-4DE0502587E0.svg">
+              </ion-col>
+              <ion-col class="menuChildTitleCol" size="11">
+                  <ion-row class="menuChildTitleRow" (click)="toggleSubMenu()">
+                      <p class="childTitle">Stocks
+                          <span> <img class="kycStateImg"
+                                  src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/E0D60B18-A6EB-432D-8600-C81797205C27.svg">
+                          </span>
+                          <span class="kycStateSubTitleRed">KYC - Pending
+                              <span class="kycStateSubIconRed" *ngIf="!isSubMenuOpen">
+                                  <img src="../../../assets/Images/down_arrow_line.svg">
+                              </span>
+                              <span class="kycStateSubIconRed" *ngIf="isSubMenuOpen">
+                                  <img style="transform: rotate(180deg)"
+                                      src="../../../assets/Images/down_arrow_line.svg">
+                              </span>
+                          </span>
+                      </p>
+                  </ion-row>
+
+                  <h6 class="childSubTitle">Get your KYC done today and start investing
+                  </h6>
+
+                  <ion-list *ngIf="isSubMenuOpen">
+                      <ion-item>
+                          <div class="menuChildDiv" *ngIf="isMenuOpen">
+                              <ion-row class="menuChildRow">
+                                  <ion-col class="menuChildTitleCol" size="11">
+                                      <!-- <div> -->
+                                      <ion-row class="menuChildTitleRow">
+                                          <img class="childImg"
+                                          src="https://cdn.zeplin.io/60a5fc059289442bc47e7527/assets/208EE24E-DD81-410D-A565-0558351DB9C5.svg">
+                                          <p class="subChildTitle">ETFs</p>
+                                          
+                                      </ion-row>
+
+                                      <h6 class="childSubTitle">Get your KYC done today and start investing
+                                      </h6>
+                                      <!-- </div> -->
+                                  </ion-col>
+                              </ion-row>
+                          </div>

@@ -8,7 +8,7 @@ const routes: Routes = [
   // },
   {
     path: '',
-    redirectTo: 'MarketingScreen',
+    redirectTo: 'gold3',
     pathMatch: 'full'
   },
   {
@@ -98,6 +98,50 @@ const routes: Routes = [
   {
     path: 'robo4',
     loadChildren: () => import('./Pages/robo-advisory4/robo-advisory4.module').then( m => m.RoboAdvisory4PageModule)
+  },
+  {
+    path: 'robo5',
+    loadChildren: () => import('./Pages/robo-advisory5/robo-advisory5.module').then( m => m.RoboAdvisory5PageModule)
+  },
+  {
+    path: 'robo6',
+    loadChildren: () => import('./Pages/robo-advisory6/robo-advisory6.module').then( m => m.RoboAdvisory6PageModule)
+  },
+  {
+    path: 'robo-home',
+    loadChildren: () => import('./Pages/robo-dashboard1/robo-dashboard1.module').then( m => m.RoboDashboard1PageModule)
+  },
+  {
+    path: 'bank1',
+    loadChildren: () => import('./Pages/bank1/bank1.module').then( m => m.Bank1PageModule)
+  },
+  {
+    path: 'bank2',
+    loadChildren: () => import('./Pages/bank2/bank2.module').then( m => m.Bank2PageModule)
+  },
+  {
+    path: 'bank3',
+    loadChildren: () => import('./Pages/bank3/bank3.module').then( m => m.Bank3PageModule)
+  },
+  {
+    path: 'bank4',
+    loadChildren: () => import('./Pages/bank4/bank4.module').then( m => m.Bank4PageModule)
+  },
+  {
+    path: 'gold1',
+    loadChildren: () => import('./Gold/gold1/gold1.module').then( m => m.Gold1PageModule)
+  },
+  {
+    path: 'gold2',
+    loadChildren: () => import('./Gold/gold2/gold2.module').then( m => m.Gold2PageModule)
+  },
+  {
+    path: 'gold3',
+    loadChildren: () => import('./Gold/gold3/gold3.module').then( m => m.Gold3PageModule)
+  },
+  {
+    path: 'gold4',
+    loadChildren: () => import('./Gold/gold4/gold4.module').then( m => m.Gold4PageModule)
   },
   
 ];
