@@ -21,58 +21,96 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="outer-content ion-padding" fullscreen="true">
+<ion-content class="outer-content ion-padding " fullscreen="true">
   <ion-card>
 
-    <ion-item>
+    <ion-item class="MuliBold">
       Charges / tax applicable
-      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion(0)"></ion-icon>
+      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
       
-      <!-- <div *ngIf="isMenuOpen">
-        <ion-icon name="chevron-down-outline" slot="end"></ion-icon>
-      </div> -->
-      <span *ngIf="isMenuOpen">
-        <!-- <img src="../../../assets/Images/down_arrow.svg"> -->
-    </span>
-    <span *ngIf="!isMenuOpen">
-      
-        <!-- <img style="transform: rotate(180deg)" src="../../../assets/Images/down_arrow.svg"> -->
-    </span>
-      <!-- <ion-item *ngIf="isMenuOpen">
-
-      </ion-item> -->
     </ion-item>
 
-    <ion-item class="ion-padding" *ngIf="isMenuOpen">
+    <ion-item class="ion-padding" *ngIf="isMenu1Open">
+      <div *ngIf="ArrowSign">
+      <ion-icon name="arrow-down" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
+    </div>
       <div class="menuChildDiv">
-          <ion-row class="menuChildRow">
           
-              <ion-col class="menuChildTitleCol" size="11">
-         
                   <ion-row class="menuChildTitleRow">
-                      <p class="childTitle">3% GST on market price
-                          <ion-subtitle class="kycStateSubTitle"> While investing</ion-subtitle>
-                      </p>
+                      <p class="childTitleGold">3% GST on market price</p>
                   </ion-row>
 
-                  <h6 class="childSubTitle">Your account is verified by Aqube. Start Investing
-                  </h6>
-                 
-              </ion-col>
-          </ion-row>
+                  <h6 class="SubTitle">While investing</h6>
+
+                  <ion-row class="menuChildTitleRow">
+                    <p class="childTitleGold">No extra charges/tax</p>
+                  </ion-row>
+
+                  <h6 class="SubTitle">While selling</h6>
+
+                  <ion-row class="menuChildTitleRow">
+                    <p class="childTitleGold">20% LTCG; STCG as per applicable tax slab of the investor      
+                    </p>
+                  </ion-row>
+
+                  <h6 class="SubTitle">LTCG applicable after 3 years</h6>
+     
       </div>
-  </ion-item>
-
-    <ion-item>
-
-      <p>Minimum holding period & liquidation</p>
-      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
-
+      
     </ion-item>
 
-    <ion-item>
+    <ion-item class="MuliBold">
+
+      Minimum holding period & liquidation
+      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion2()"></ion-icon>
+
+    </ion-item>
+    <ion-item class="ion-padding" *ngIf="isMenu2Open">
+      <div *ngIf="ArrowSign">
+      <ion-icon name="arrow-down" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
+    </div>
+      <div class="menuChildDiv">
+          
+                <ion-row class="menuChildTitleRow">
+                    <p class="childTitleGold">2 Working days </p>
+                </ion-row>
+
+                <h6 class="SubTitle">Minimum holding period</h6>
+
+                <ion-row class="menuChildTitleRow">
+                    <p class="childTitleGold">Amount transferred to primary bank account within 2 working days</p>
+                </ion-row>
+
+                <h6 class="SubTitle">Liquidation Period </h6>
+     
+      </div>
+      
+    </ion-item>
+    
+    <ion-item class="MuliBold">
       About Seller
-      <ion-icon name="chevron-forward-outline" slot="end" class="blue"></ion-icon>
+      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion3()"></ion-icon>
+    </ion-item>
+
+    <ion-item class="ion-padding" *ngIf="isMenu3Open">
+      <div *ngIf="ArrowSign">
+      <ion-icon name="arrow-down" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
+    </div>
+      <div class="menuChildDiv">
+          
+                <ion-row class="menuChildTitleRow">
+                    <p class="childTitle">Augmont Goldtech Private Limited</p>
+           
+                </ion-row>
+
+                <h6 class="SubTitle">Integrated precious metals management company</h6>
+                <h6 class="warm-grey-10">To provide you pure and top-quality bullion, Alphaqube has partnered with Augmont Goldtech Private Limited - an
+                  integrated precious metals management company. Bullion India is one of the products launced by Augmont, offering
+                  and opportunity to buy gold at flexible prices.
+
+                </h6>
+      </div>
+      
     </ion-item>
 
   </ion-card>
