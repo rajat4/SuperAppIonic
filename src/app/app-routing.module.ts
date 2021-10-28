@@ -2,13 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  // },
+ 
   {
     path: '',
-    redirectTo: 'gold3',
+    redirectTo: 'rajat1',
     pathMatch: 'full'
   },
   {
@@ -146,6 +143,10 @@ const routes: Routes = [
   {
     path: 'rajat202110281016',
     loadChildren: () => import('./Pages/rajat202110281016/rajat202110281016.module').then( m => m.Rajat202110281016PageModule)
+  },
+  {
+    path: 'rajat1',
+    loadChildren: () => import('./Pages/rajat1/rajat1.module').then( m => m.Rajat1PageModule)
   },
   
 ];

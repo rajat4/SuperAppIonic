@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar class="toolbar">
     
     <ion-buttons slot="start">
@@ -21,10 +21,43 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding outer-content">
 
+  <div id="OTPModal" class="modal" >
+
+    <div class="modal-content" >
+        <span class="close" (click)="closeOtp();">&times;</span>
+        <p class="modalTitle">{{otpLabels[0].otpLabel}}</p>
+        <div class="container PhoneVerificationHolder">
+            <p>{{otpLabels[0].otpSentOn}} {{EnteredMobileNumber}}</p>
+            <form [formGroup]="PhoneVerificationForm" (ngSubmit)="getOTP()">
+              
+                <p class="text-center resentOtp">{{otpLabels[0].resendLable}}</p>
+                <ion-button expand="block" routerLink="/rajat202110281016" (click)="onContinueClick()">{{otpLabels[0].btnText}}</ion-button>
+
+            </form>
+        </div>
+    </div>
+
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>Modal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen class="ion-padding">
+      <ion-button expand="block">Show Modal</ion-button>
+    </ion-content>
+  </ion-app>
 </ion-content>
-
+<script type="module">
+  import { modalController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+  window.modalController = modalController;
+</script>
 <ion-footer class="ftr">
-  <ion-button class="btn" routerLink="/gold1" expand="block">Continue To Account Setup</ion-button>
+  <ion-button class="btn" routerLink="/gold1" expand="block">Show Modal</ion-button>
 </ion-footer>
+
+<ion-modal>
+  Rajat was here 
+</ion-modal> -->

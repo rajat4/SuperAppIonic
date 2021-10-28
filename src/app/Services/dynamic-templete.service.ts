@@ -35,7 +35,7 @@ export class DynamicTempleteService {
     return this.httpclient.get('assets/templateData/MfProductDetails.json');
   }
 
-  GetBasicMOdeDetails(): Observable<any> {
+  GetBasicMOdeDetails(): Observable<any> {``
     return this.httpclient.get('assets/templateData/BasicMode.json');
   }
   

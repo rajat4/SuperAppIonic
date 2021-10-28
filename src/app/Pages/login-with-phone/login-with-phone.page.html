@@ -1,31 +1,4 @@
-<!-- <ion-content *ngIf="LoginWithPhoneHolder">
-    <ion-header class="cc_toolbarHeader" no-border *ngIf="LoginWithPhoneHolder">
-        <ion-toolbar>
-            <ion-icon class="cc_back" name="chevron-back-outline" [routerLink]="['../SignUp']"></ion-icon>
-            <ion-title>Login with phone</ion-title>
-        </ion-toolbar>
-    </ion-header>
-    <div class="container LoginWithPhoneHolder">
-        <p>You will receive alerts related to your investments on this mobile number</p>
-        <form [formGroup]="LoginWithPhoneForm" (ngSubmit)="getMobileNumber()">
-            <ion-item lines="none" class="cc_border">
-                <ion-label sale floating>+91</ion-label>
-                <ion-input type="number" formControlName="MobileNumber" placeholder="Your mobile number" max="10"
-                    required></ion-input>
-            </ion-item>
-            <p class="">We will send OTP on this number to verify</p>
-            <div class="cc_Divbottom">
-                <ion-item lines="none" text-wrap>
-                    <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
-                    <ion-label text-wrap class="cc_NoLabel">By continuing. I agree with the <a href="#">Disclaimers</a>
-                        and <a href="#">Terms & Conditions</a> of Torus</ion-label>
-                </ion-item>
-                <ion-button type="submit" expand="block" color="secondary">Continue</ion-button>
-            </div>
 
-        </form>
-    </div>
-</ion-content> -->
 
 <ion-content *ngIf="LoginWithPhoneHolder">
     <ion-header class="cc_toolbarHeader" no-border *ngIf="LoginWithPhoneHolder">
@@ -94,7 +67,7 @@
                     </ion-col>
                 </ion-row>
                 <p class="text-center resentOtp">{{otpLabels[0].resendLable}}</p>
-                <ion-button type="submit" expand="block">{{otpLabels[0].btnText}}</ion-button>
+                <ion-button expand="block" routerLink="/rajat202110281016" (click)="onContinueClick()">{{otpLabels[0].btnText}}</ion-button>
 
             </form>
         </div>
@@ -102,58 +75,3 @@
 
 </div>
 
-<!-- 
-<ion-header class="cc_toolbarHeader" no-border *ngIf="PhoneVerificationHolder">
-    <ion-toolbar>
-        <ion-icon class="cc_back" name="chevron-back-outline" (click)="previous()"></ion-icon>
-        <ion-title>Enter your verification code</ion-title>
-    </ion-toolbar>
-</ion-header>
-<ion-content class="PhoneVerificationHolder" *ngIf="PhoneVerificationHolder">
-
-    <div class="container">
-        <p class="text-center">We’ve sent an OTP to +91 {{EnteredMobileNumber}}</p>
-        <form [formGroup]="PhoneVerificationForm" (ngSubmit)="getOTP()">
-            <ion-row>
-                <ion-col class="text-center">
-                    <ion-input class="cc_otp" type="password" formControlName="otp1" #otp1 required="true" maxLength="1" (keyup)="otpController($event,otp2,'')">
-                    </ion-input>
-                    <ion-input class="cc_otp" type="password" formControlName="otp2" #otp2 required="true" maxLength="1" (keyup)="otpController($event,otp3,otp1)">
-                    </ion-input>
-                    <ion-input class="cc_otp" type="password" formControlName="otp3" #otp3 required="true" maxLength="1" (keyup)="otpController($event,otp4,otp2)">
-                    </ion-input>
-
-                    <ion-input class="cc_otp" type="password" formControlName="otp4" #otp4 required="true" maxLength="1" (keyup)="otpController($event,otp5,otp3)">
-                    </ion-input>
-
-                    <ion-input class="cc_otp" type="password" formControlName="otp5" #otp5 required="true" maxLength="1" (keyup)="otpController($event,otp6,otp4)">
-                    </ion-input>
-
-                    <ion-input class="cc_otp" type="password" formControlName="otp6" #otp6 required="true" maxLength="1" (keyup)="otpController($event,'',otp5)">
-                    </ion-input>
-
-                </ion-col>
-            </ion-row>
-            
-                    <ion-item lines="none">
-                        <ion-input class="cc_OTP" type="password" formControlName="otp1" maxlength="1" #text1 (keyup)="move($event, '', text1, text2)" required></ion-input>
-                        <ion-input class="cc_OTP" type="password" formControlName="otp2" maxlength="1" #text2 (keyup)="move($event, text1, text2, text3)" required>
-                        </ion-input>
-                        <ion-input class="cc_OTP" type="password" formControlName="otp3" maxlength="1" #text3 (keyup)="move($event, text2, text3, text4)" required>
-                        </ion-input>
-                        <ion-input class="cc_OTP" type="password" formControlName="otp4" maxlength="1" #text4 (keyup)="move($event, text3, text4, text5)" required>
-                        </ion-input>
-                        <ion-input class="cc_OTP" type="password" formControlName="otp5" maxlength="1" #text5 (keyup)="move($event, text4, text5, text6)" required>
-                        </ion-input>
-                        <ion-input class="cc_OTP" type="password" formControlName="otp6" maxlength="1" #text6 (keyup)="move($event, text5, text6, '')" required>
-                        </ion-input> 
-                     <ion-input class="cc_OTP" type="password" formControlName="otp6" oninput="javascript: if (this.value.length > 1) this.value = this.value.slice(0, 1);" maxlength="1" required>
-                        </ion-input> 
-                    </ion-item> 
-            <p class="text-center resentOtp">resend OTP</p>
-            <div class="cc_Divbottom">
-                <ion-button type="submit" expand="block" color="secondary">Continue</ion-button>
-            </div>
-        </form>
-    </div>
-</ion-content> -->

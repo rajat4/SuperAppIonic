@@ -129,4 +129,8 @@ export class LoginWithPhonePage implements OnInit {
       return 0;
     }
   }
+  onContinueClick(){
+    this._router.navigateByUrl('../BasicMode/wealth');
+    console.log("Clicked on Continue");
+  }
 }
