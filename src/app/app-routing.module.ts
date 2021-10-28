@@ -143,6 +143,10 @@ const routes: Routes = [
     path: 'gold4',
     loadChildren: () => import('./Gold/gold4/gold4.module').then( m => m.Gold4PageModule)
   },
+  {
+    path: 'rajat202110281016',
+    loadChildren: () => import('./Pages/rajat202110281016/rajat202110281016.module').then( m => m.Rajat202110281016PageModule)
+  },
   
 ];
 

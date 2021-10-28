@@ -10,10 +10,10 @@
     <ion-title>Gold 4</ion-title>
 
     <ion-buttons slot="end">
-      <ion-button routerLink="/gold1">
+      <ion-button routerLink="/rajat202110281016">
         <ion-icon name="share" class="blue"></ion-icon>
       </ion-button>
-      <ion-button routerLink="/gold2">
+      <ion-button routerLink="/rajat202110281016">
         <ion-icon name="cart" class="blue"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -22,88 +22,83 @@
 </ion-header>
 
 <ion-content class="outer-content ion-padding " fullscreen="true">
+
+  <p class="label">Details</p>
   <ion-card>
 
-    <ion-item class="MuliBold">
+    <ion-item  lines="none" class="MuliBold">
       Charges / tax applicable
-      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
-      
+      <ion-icon *ngIf="!isMenu1Open" name="chevron-down-outline" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
+      <ion-icon *ngIf="isMenu1Open" name="chevron-up-outline" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
     </ion-item>
 
-    <ion-item class="ion-padding" *ngIf="isMenu1Open">
+    <ion-item *ngIf="isMenu1Open">
       <div *ngIf="ArrowSign">
       <ion-icon name="arrow-down" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
     </div>
       <div class="menuChildDiv">
           
-                  <ion-row class="menuChildTitleRow">
-                      <p class="childTitleGold">3% GST on market price</p>
-                  </ion-row>
+                  <ion-row class="menuTitle">
+                      <strong class="childTitleGold">3% GST on market price</strong>
+                 
+                  <h6 class="SubTitle">While investing</h6> </ion-row>
 
-                  <h6 class="SubTitle">While investing</h6>
+                  <ion-row class="menuTitle">
+                    <strong class="childTitleGold">No extra charges/tax</strong>
+                  
+                  <h6 class="SubTitle">While selling</h6></ion-row>
 
-                  <ion-row class="menuChildTitleRow">
-                    <p class="childTitleGold">No extra charges/tax</p>
-                  </ion-row>
-
-                  <h6 class="SubTitle">While selling</h6>
-
-                  <ion-row class="menuChildTitleRow">
-                    <p class="childTitleGold">20% LTCG; STCG as per applicable tax slab of the investor      
-                    </p>
-                  </ion-row>
-
-                  <h6 class="SubTitle">LTCG applicable after 3 years</h6>
-     
+                  <ion-row class="menuTitle">
+                    <strong class="childTitleGold">20% LTCG; STCG as per applicable tax slab of the investor</strong>
+                  
+                  <h6 class="SubTitle">LTCG applicable after 3 years</h6></ion-row>
       </div>
       
     </ion-item>
 
-    <ion-item class="MuliBold">
+    <ion-item lines="none" class="MuliBold">
 
       Minimum holding period & liquidation
-      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion2()"></ion-icon>
-
+      <ion-icon *ngIf="!isMenu2Open" name="chevron-down-outline" slot="end" class="blue" (click)="toggleAccordion2()"></ion-icon>
+      <ion-icon *ngIf="isMenu2Open" name="chevron-up-outline" slot="end" class="blue" (click)="toggleAccordion2()"></ion-icon>
     </ion-item>
-    <ion-item class="ion-padding" *ngIf="isMenu2Open">
+
+    <ion-item *ngIf="isMenu2Open">
       <div *ngIf="ArrowSign">
       <ion-icon name="arrow-down" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
     </div>
       <div class="menuChildDiv">
           
-                <ion-row class="menuChildTitleRow">
-                    <p class="childTitleGold">2 Working days </p>
-                </ion-row>
+                <ion-row class="menuTitle">
+                    <strong class="childTitleGold">2 Working days </strong>
+               
+                <h6 class="SubTitle">Minimum holding period</h6> </ion-row>
 
-                <h6 class="SubTitle">Minimum holding period</h6>
-
-                <ion-row class="menuChildTitleRow">
-                    <p class="childTitleGold">Amount transferred to primary bank account within 2 working days</p>
-                </ion-row>
-
-                <h6 class="SubTitle">Liquidation Period </h6>
+                <ion-row class="menuTitle">
+                    <strong class="childTitleGold">Amount transferred to primary bank account within 2 working days</strong>
+          
+                <h6 class="SubTitle">Liquidation Period </h6>    </ion-row>
      
       </div>
       
     </ion-item>
     
-    <ion-item class="MuliBold">
+    <ion-item lines="none" class="MuliBold">
       About Seller
-      <ion-icon name="chevron-forward-outline" slot="end" class="blue" (click)="toggleAccordion3()"></ion-icon>
+      <ion-icon *ngIf="!isMenu3Open" name="chevron-down-outline" slot="end" class="blue" (click)="toggleAccordion3()"></ion-icon>
+      <ion-icon *ngIf="isMenu3Open" name="chevron-up-outline" slot="end" class="blue" (click)="toggleAccordion3()"></ion-icon>
     </ion-item>
 
-    <ion-item class="ion-padding" *ngIf="isMenu3Open">
+    <ion-item *ngIf="isMenu3Open">
       <div *ngIf="ArrowSign">
       <ion-icon name="arrow-down" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
     </div>
       <div class="menuChildDiv">
           
-                <ion-row class="menuChildTitleRow">
-                    <p class="childTitle">Augmont Goldtech Private Limited</p>
-           
-                </ion-row>
+                <ion-row class="menuTitle">
+                    <strong class="childTitleGold">Augmont Goldtech Private Limited</strong>  
 
-                <h6 class="SubTitle">Integrated precious metals management company</h6>
+                <h6 class="SubTitle">Integrated precious metals management company</h6>  </ion-row>
                 <h6 class="warm-grey-10">To provide you pure and top-quality bullion, Alphaqube has partnered with Augmont Goldtech Private Limited - an
                   integrated precious metals management company. Bullion India is one of the products launced by Augmont, offering
                   and opportunity to buy gold at flexible prices.
@@ -115,3 +110,7 @@
 
   </ion-card>
 </ion-content>
+
+<ion-footer>
+  <ion-button routerLink="/rajat202110281016" block="">Next</ion-button>
+</ion-footer>
