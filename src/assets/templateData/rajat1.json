@@ -1,0 +1,19 @@
+{
+   "Amount":"4,632.90",
+   "GST":"3.00",
+   "Time":"4.50",
+   "BankDetailsList":[
+      {
+         "id":"ICICI",
+         "BankName":"ICICI Bank Limited",
+         "ACno":"90760323085432",
+         "Logo":"assets/Images/icici2.png"
+      },
+      {
+         "id":"HDFC",
+         "BankName":"HDFC Bank Limited",
+         "ACno":"90040323085432",
+         "Logo":"assets/Images/HDFC.png"
+      }
+   ]
+}

@@ -28,10 +28,10 @@ export class SignUpPage implements OnInit {
 
   }
   ngOnChange() {
-    console.log("singup")
+    console.log("singup");
   }
   ngOnInit() {
-    this.GetDynamicData()
+    this.GetDynamicData();
   }
 
   GetDynamicData() {

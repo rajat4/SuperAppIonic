@@ -2,18 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { Rajat1Service } from './rajat1.service';
 
+
 @Component({
-  selector: 'app-rajat1',
-  templateUrl: './rajat1.page.html',
-  styleUrls: ['./rajat1.page.scss'],
+  selector: 'app-gold25v1',
+  templateUrl: './gold25v1.page.html',
+  styleUrls: ['./gold25v1.page.scss'],
 })
-export class Rajat1Page implements OnInit {
+export class Gold25v1Page implements OnInit {
 
   Gold: any;
   modal: boolean = false;
 
   constructor(public modalCtrl: ModalController,
-              private dynamicData: Rajat1Service ) { }
+              private dynamicData: Rajat1Service) { }
 
   ngOnInit() {
     this.GetDynamicData();
@@ -28,7 +29,5 @@ export class Rajat1Page implements OnInit {
         this.Gold = data;
       }
     });
-
-  
   }
 }

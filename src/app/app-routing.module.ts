@@ -5,7 +5,7 @@ const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'rajat1',
+    redirectTo: 'gold17v1',
     pathMatch: 'full'
   },
   {
@@ -147,6 +147,22 @@ const routes: Routes = [
   {
     path: 'rajat1',
     loadChildren: () => import('./Pages/rajat1/rajat1.module').then( m => m.Rajat1PageModule)
+  },
+  {
+    path: 'gold17v1',
+    loadChildren: () => import('./Gold/gold17v1/gold17v1.module').then( m => m.Gold17v1PageModule)
+  },
+  {
+    path: 'gold19v1',
+    loadChildren: () => import('./Gold/gold19v1/gold19v1.module').then( m => m.Gold19v1PageModule)
+  },
+  {
+    path: 'gold18v1',
+    loadChildren: () => import('./Gold/gold18v1/gold18v1.module').then( m => m.Gold18v1PageModule)
+  },
+  {
+    path: 'gold25v1',
+    loadChildren: () => import('./Gold/gold25v1/gold25v1.module').then( m => m.Gold25v1PageModule)
   },
   
 ];

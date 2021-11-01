@@ -1,0 +1,33 @@
+{
+	"Gold":[
+	{
+		"Amount":"₹4,632.90/gm",
+		"tabID":"tb1"
+	},
+	{
+		"GST":"₹3.00 IGST",
+		"tabID":"tb2"
+	},
+   {
+      "Time":"4.50 mins",
+      "tabID":"tb3"
+   }
+	
+	], 
+	"BankDetailsList":[
+      {
+         
+         "BankName":"ICICI Bank Limited",
+         "ACno":"90760323085432",
+         "Logo":"assets/Images/icici2.png"
+         
+      },
+      {
+         
+         "BankName":"HDFC Bank Limited",
+         "ACno":"90760323085432",
+         "Logo":"assets/Images/icici2.png"
+      
+      }      
+         ]
+      }

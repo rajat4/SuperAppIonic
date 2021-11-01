@@ -1,0 +1,105 @@
+<ion-header>
+
+  <ion-toolbar>
+    
+    <ion-buttons slot="start" class="blue">
+      <ion-button routerLink="/gold17v1">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title class="title">Order Details</ion-title>
+
+    <ion-buttons slot="end" class="blue">
+      <ion-button routerLink="/gold19v1">
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="ion-padding font-12 Muli_Regular">
+
+    <div class="div-padding">
+      <ion-text><strong>Augmont Digital Gold</strong></ion-text>
+      <br>
+      <ion-text>16 Mar 2021</ion-text>
+    </div>
+
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col size="2.5"><div class="div-padding">Units<br><strong>0.0216</strong></div></ion-col>
+        <ion-col size="4"><div class="div-padding">Buy Price/gm<br><strong>₹4632.90</strong><br>+₹3.00 GST</div></ion-col>
+        <ion-col size="5.5"><div class="div-padding">Transaction Type<br><strong>Buy</strong></div></ion-col>
+      </ion-row> 
+    </ion-grid>
+
+  <div class="div-padding">
+    <ion-text>Transaction ID</ion-text>
+    <br>
+    <ion-text><strong>A-Hm-FH347-FGHK-347928</strong></ion-text>
+    <img src="assets/Images/copy_paper.svg" alt="copy_paper" class="div-padding">
+  </div>
+  </ion-card>
+
+ <span class="ion-padding align">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="9">
+          <ion-text>Order Status</ion-text>
+        </ion-col>
+        <ion-col size="3">
+          <ion-icon name="checkmark-circle-outline" class="green"></ion-icon>
+          <ion-text class="green">Successful</ion-text> 
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</span>
+
+<link href="css/addons-pro/steppers.css" rel="stylesheet">
+<link href="css/addons-pro/steppers.min.css" rel="stylesheet">
+<script type="text/javascript" src="js/addons-pro/steppers.js"></script>
+<script type="text/javascript" src="js/addons-pro/steppers.min.js"></script>
+
+<script>$(function() { alert('hello') });</script>
+
+<div class="row">
+  <div class="col-md-12">
+    <ul class="stepper stepper-horizontal">
+      <li class="completed">
+        <a href="#!">
+          <span class="circle">1</span>
+          <span class="label">First step</span>
+        </a>
+      </li>
+      <li class="active">
+        <a href="#!">
+          <span class="circle">2</span>
+          <span class="label">Second step</span>
+        </a>
+      </li>
+      <li class="warning">
+        <a href="#!">
+          <span class="circle"><i class="fas fa-exclamation"></i></span>
+          <span class="label">Third step</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<ion-stepper #stepper (selectIndexChange)="selectChange($event)">
+ 
+</ion-stepper>
+
+<button ion-button ionicStepperNext>Next</button>
+
+</ion-content>
+
+<ion-button expand="block" routerLink="/gold19v1" class="button">
+  Continue to Gold 19
+</ion-button>

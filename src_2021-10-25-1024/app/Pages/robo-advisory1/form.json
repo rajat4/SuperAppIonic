@@ -1,9 +1,0 @@
-[
-    {
-        "key": "email",
-        "type": "input",
-        "options":{
-            "label":"Your best email"
-        }
-    }
-]
