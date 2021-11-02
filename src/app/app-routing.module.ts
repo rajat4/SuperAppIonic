@@ -164,6 +164,10 @@ const routes: Routes = [
     path: 'gold25v1',
     loadChildren: () => import('./Gold/gold25v1/gold25v1.module').then( m => m.Gold25v1PageModule)
   },
+  // {
+  //   path: 'stepper',
+  //   loadChildren: () => import('./Gold/stepper/stepper.module').then( m => m.StepperPageModule)
+  // },
   
 ];
 

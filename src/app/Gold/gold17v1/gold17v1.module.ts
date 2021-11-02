@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { Gold17v1PageRoutingModule } from './gold17v1-routing.module';
 
+
 import { Gold17v1Page } from './gold17v1.page';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { Gold17v1Page } from './gold17v1.page';
     FormsModule,
     IonicModule,
     Gold17v1PageRoutingModule
+
   ],
   declarations: [Gold17v1Page]
 })

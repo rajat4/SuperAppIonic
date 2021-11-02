@@ -31,30 +31,33 @@
     </div>
 
     <ion-grid class="ion-no-padding">
+
       <ion-row>
         <ion-col size="2.5"><div class="div-padding">Units<br><strong>0.0216</strong></div></ion-col>
         <ion-col size="4"><div class="div-padding">Buy Price/gm<br><strong>₹4632.90</strong><br>+₹3.00 GST</div></ion-col>
         <ion-col size="5.5"><div class="div-padding">Transaction Type<br><strong>Buy</strong></div></ion-col>
       </ion-row> 
+
     </ion-grid>
 
-  <div class="div-padding">
-    <ion-text>Transaction ID</ion-text>
-    <br>
-    <ion-text><strong>A-Hm-FH347-FGHK-347928</strong></ion-text>
-    <img src="assets/Images/copy_paper.svg" alt="copy_paper" class="div-padding">
-  </div>
+    <div class="div-padding">
+      <ion-text>Transaction ID</ion-text>
+      <br>
+      <ion-text><strong>A-Hm-FH347-FGHK-347928</strong></ion-text>
+      <img src="assets/Images/copy_paper.svg" alt="copy_paper" class="div-padding">
+    </div>
+    
   </ion-card>
 
  <span class="ion-padding align">
     <ion-grid>
       <ion-row>
         <ion-col size="9">
-          <ion-text>Order Status</ion-text>
+          <ion-text class="Muli_Regular">Order Status</ion-text>
         </ion-col>
         <ion-col size="3">
           <ion-icon name="checkmark-circle-outline" class="green"></ion-icon>
-          <ion-text class="green">Successful</ion-text> 
+          <ion-text class="green Muli_Regular">Successful</ion-text> 
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -65,7 +68,9 @@
 <script type="text/javascript" src="js/addons-pro/steppers.js"></script>
 <script type="text/javascript" src="js/addons-pro/steppers.min.js"></script>
 
-<script>$(function() { alert('hello') });</script>
+<script>
+  $(function() { alert('hello') });
+</script>
 
 <div class="row">
   <div class="col-md-12">
@@ -100,6 +105,8 @@
 
 </ion-content>
 
-<ion-button expand="block" routerLink="/gold19v1" class="button">
-  Continue to Gold 19
-</ion-button>
+<ion-footer class="ion-padding">
+  <ion-button expand="block" routerLink="/gold19v1" class="button">
+    Continue to Gold 19
+  </ion-button>
+</ion-footer>

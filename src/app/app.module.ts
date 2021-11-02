@@ -11,7 +11,7 @@ import { DynamicTempleteService } from './Services/dynamic-templete.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { Media, MediaObject } from '@ionic-native/media/ngx'
-// import { IonicStepperModule } from "ionic-stepper";
+// import { IonicStepperModule } from 'ionic-stepper';
 
 @NgModule({
   declarations: [AppComponent],
