@@ -5,7 +5,7 @@ const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'gold17v1',
+    redirectTo: 'gold15v1',
     pathMatch: 'full'
   },
   {
@@ -163,6 +163,70 @@ const routes: Routes = [
   {
     path: 'gold25v1',
     loadChildren: () => import('./Gold/gold25v1/gold25v1.module').then( m => m.Gold25v1PageModule)
+  },
+  {
+    path: 'gold1v1',
+    loadChildren: () => import('./Gold/gold1v1/gold1v1.module').then( m => m.Gold1v1PageModule)
+  },
+  {
+    path: 'gold2v1',
+    loadChildren: () => import('./Gold/gold2v1/gold2v1.module').then( m => m.Gold2v1PageModule)
+  },
+  {
+    path: 'gold3v1',
+    loadChildren: () => import('./Gold/gold3v1/gold3v1.module').then( m => m.Gold3v1PageModule)
+  },
+  {
+    path: 'gold4v1',
+    loadChildren: () => import('./Gold/gold4v1/gold4v1.module').then( m => m.Gold4v1PageModule)
+  },
+  {
+    path: 'gold5v1',
+    loadChildren: () => import('./Gold/gold5v1/gold5v1.module').then( m => m.Gold5v1PageModule)
+  },
+  {
+    path: 'gold6v1',
+    loadChildren: () => import('./Gold/gold6v1/gold6v1.module').then( m => m.Gold6v1PageModule)
+  },
+  {
+    path: 'gold7v1',
+    loadChildren: () => import('./Gold/gold7v1/gold7v1.module').then( m => m.Gold7v1PageModule)
+  },
+  {
+    path: 'gold8v1',
+    loadChildren: () => import('./Gold/gold8v1/gold8v1.module').then( m => m.Gold8v1PageModule)
+  },
+  {
+    path: 'gold9v1',
+    loadChildren: () => import('./Gold/gold9v1/gold9v1.module').then( m => m.Gold9v1PageModule)
+  },
+  {
+    path: 'gold10v1',
+    loadChildren: () => import('./Gold/gold10v1/gold10v1.module').then( m => m.Gold10v1PageModule)
+  },
+  {
+    path: 'gold11v1',
+    loadChildren: () => import('./Gold/gold11v1/gold11v1.module').then( m => m.Gold11v1PageModule)
+  },
+  {
+    path: 'gold12v1',
+    loadChildren: () => import('./Gold/gold12v1/gold12v1.module').then( m => m.Gold12v1PageModule)
+  },
+  {
+    path: 'gold13v1',
+    loadChildren: () => import('./Gold/gold13v1/gold13v1.module').then( m => m.Gold13v1PageModule)
+  },
+  {
+    path: 'gold14v1',
+    loadChildren: () => import('./Gold/gold14v1/gold14v1.module').then( m => m.Gold14v1PageModule)
+  },
+  {
+    path: 'gold15v1',
+    loadChildren: () => import('./Gold/gold15v1/gold15v1.module').then( m => m.Gold15v1PageModule)
+  },
+  {
+    path: 'gold16v1',
+    loadChildren: () => import('./Gold/gold16v1/gold16v1.module').then( m => m.Gold16v1PageModule)
   },
   // {
   //   path: 'stepper',
