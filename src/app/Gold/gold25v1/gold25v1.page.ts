@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { Rajat1Service } from './rajat1.service';
+import { DynamicTempleteService } from 'src/app/Services/dynamic-templete.service';
+import { Gold25v1Service } from 'src/app/Services/gold25v1.service';
+// import { Gold25v1Service } from './Gold25v1.service';
 
 
 @Component({
@@ -11,10 +13,11 @@ import { Rajat1Service } from './rajat1.service';
 export class Gold25v1Page implements OnInit {
 
   Gold: any;
-  modal: boolean = false;
+  modal: boolean = true;
 
   constructor(public modalCtrl: ModalController,
-              private dynamicData: Rajat1Service) { }
+              private dynamicData: Gold25v1Service,
+              public dD: DynamicTempleteService) { }
 
   ngOnInit() {
     this.GetDynamicData();
@@ -23,9 +26,9 @@ export class Gold25v1Page implements OnInit {
     this.modal = true;
   }
   GetDynamicData() {
-    this.dynamicData.GetDynamicGoldData().subscribe(data => {
+    this.dD.GetDynamicGoldData().subscribe(data => {
       if (data) {
-        console.log("languageType " + JSON.stringify(data));
+        // console.log("languageType " + JSON.stringify(data));
         this.Gold = data;
       }
     });

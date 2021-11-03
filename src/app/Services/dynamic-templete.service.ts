@@ -122,4 +122,7 @@ export class DynamicTempleteService {
       return this.httpclient.get('assets/templateData/MfProductDetailsLabelEN.json');
     }
   }
+  GetDynamicGoldData(): Observable<any> {
+    return this.httpclient.get('assets/templateData/gold25v1.json');
+  }
 }

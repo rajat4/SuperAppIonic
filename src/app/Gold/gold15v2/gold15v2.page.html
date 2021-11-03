@@ -51,26 +51,24 @@
 
 
 
-<ion-card class="Muli_Bold ion-padding">
+<ion-card class="Muli_Bold ion-no-padding">
  
-  <ion-row>
+  <ion-row class="ion-no-padding lt">
 
     <ion-col size="4">
       <ion-row class="fs-10 grey faded_red">Sold</ion-row>
       <ion-row><ion-datetime class="ion-no-padding" placeholder="01 May 2021"></ion-datetime></ion-row>
     </ion-col>
   
-    <ion-col size="6">
+    <ion-col size="6" class="ion-no-padding">
       <ion-row class="fs-10">
         <ion-col size="3" class="grey">Qty:</ion-col>
         <ion-col size="9">1.043 gm</ion-col>
       </ion-row>
-      <span class="span">
       <ion-row class="fs-10 grey">
-        <ion-col size="4">Price:</ion-col>
-        <ion-col size="9">4892.50 /gm</ion-col>
+        <ion-col size="3.5">Price:</ion-col>
+        <ion-col size="8.5">4892.50 /gm</ion-col>
       </ion-row>
-    </span>
     </ion-col>
     
     <ion-col size="2">
@@ -81,19 +79,24 @@
 
   </ion-row>
 
-<ion-row>
+  <hr>
 
-  <ion-col size="5">
+<ion-row class="ion-no-padding lt">
+
+  <ion-col size="4">
     <ion-row class="fs-10 grey faded_red">Sold</ion-row>
     <ion-row><ion-datetime class="ion-no-padding" placeholder="01 May 2021"></ion-datetime></ion-row>
   </ion-col>
 
-  <ion-col size="5">
-    <ion-row class="fs-10 grey">
-      <ion-col size="3">Qty:</ion-col>
-      <ion-col size="9">1.043 gm</ion-col>
+  <ion-col size="6" class="ion-no-padding">
+    <ion-row class="fs-10">
+      <ion-col size="3" class="grey">Qty:</ion-col>
+      <ion-col size="9">3.043 gm</ion-col>
     </ion-row>
-    <ion-row>40.000 gm</ion-row>
+    <ion-row class="fs-10 grey">
+      <ion-col size="3.5">Price:</ion-col>
+      <ion-col size="8.5">4892.50 /gm</ion-col>
+    </ion-row>
   </ion-col>
 
   <ion-col size="2">
@@ -104,23 +107,24 @@
   
 </ion-row>
 
+<hr>
 
  
-<ion-row>
+<ion-row class="ion-no-padding lt">
 
-  <ion-col size="5">
+  <ion-col size="4">
     <ion-row class="fs-10 grey success">Invested</ion-row>
     <ion-row><ion-datetime class="ion-no-padding" placeholder="01 May 2021"></ion-datetime></ion-row>
   </ion-col>
 
-  <ion-col size="5">
+  <ion-col size="6" class="ion-no-padding">
     <ion-row class="fs-10">
       <ion-col size="3" class="grey">Qty:</ion-col>
       <ion-col size="9">1.043 gm</ion-col>
     </ion-row>
-    <ion-row class="grey">
-      <ion-col size="3">Price:</ion-col>
-      <ion-col size="9">4892.50 /gm</ion-col>
+    <ion-row class="fs-10 grey">
+      <ion-col size="3.5">Price:</ion-col>
+      <ion-col size="8.5">4892.50 /gm</ion-col>
     </ion-row>
   </ion-col>
 
@@ -132,25 +136,25 @@
 
 </ion-row>
 
+<hr>
 
+<ion-row class="ion-no-padding lt">
 
-<ion-row>
-
-  <ion-col size="5">
+  <ion-col size="4">
     <ion-row class="fs-10 grey success">Invested</ion-row>
     <ion-row>
       <ion-datetime class="ion-no-padding" placeholder="01 May 2021"></ion-datetime>
     </ion-row>
   </ion-col>
 
-  <ion-col size="5">
+  <ion-col size="6" class="ion-no-padding">
     <ion-row class="fs-10">
       <ion-col size="3" class="grey">Qty:</ion-col>
-      <ion-col size="9">1.043 gm</ion-col>
+      <ion-col size="9">2.043 gm</ion-col>
     </ion-row>
     <ion-row class="fs-10 grey">
-      <ion-col size="4">Price:</ion-col>
-      <ion-col size="9">4892.50 /gm</ion-col>
+      <ion-col size="3.5">Price:</ion-col>
+      <ion-col size="8.5">4892.50 /gm</ion-col>
     </ion-row>
   </ion-col>
 
@@ -167,3 +171,16 @@
 <ion-datetime></ion-datetime>
 
 </ion-content>
+
+<ion-footer>
+  
+  <ion-row>
+    <ion-col>
+      <ion-button fill="outline" expand="block" class="btn-height-45">Sell</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button  expand="block" class="btn-height-45" routerLink="/gold16v1">Invest More</ion-button>
+    </ion-col>
+  </ion-row>
+  
+</ion-footer>

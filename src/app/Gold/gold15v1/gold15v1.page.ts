@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Gold15v1Page implements OnInit {
 
-  constructor() { }
+  
 
   ngOnInit() {
   }
-
+  
+  strings:Array<string>;
+  selected:string;
+  
+  constructor(){
+      this.strings = new Array<string>();
+      this.strings.push('a');
+      this.strings.push('b');
+  }
 }
