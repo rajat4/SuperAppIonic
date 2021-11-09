@@ -5,7 +5,7 @@ const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'gold1v1',
+    redirectTo: 'gold5v1',
     pathMatch: 'full'
   },
   {
@@ -231,6 +231,14 @@ const routes: Routes = [
   {
     path: 'gold15v2',
     loadChildren: () => import('./Gold/gold15v2/gold15v2.module').then( m => m.Gold15v2PageModule)
+  },
+  {
+    path: 'gold1v2',
+    loadChildren: () => import('./Gold/gold1v2/gold1v2.module').then( m => m.Gold1v2PageModule)
+  },
+  {
+    path: 'gold2v2',
+    loadChildren: () => import('./Gold/gold2v2/gold2v2.module').then( m => m.Gold2v2PageModule)
   },
   // {
   //   path: 'stepper',

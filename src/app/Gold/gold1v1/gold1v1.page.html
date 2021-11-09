@@ -5,18 +5,32 @@
 </ion-header>
 
 <ion-content class="ion-padding">
+
+
+<img [defaultImage]="defaultImage" [lazyLoad]="image" >
+
+
+  <img rel="icon" type="image/png" href="assets/icon/favicon.png" />
+
   <ion-item>
+
     <ion-avatar slot="start">
-      <img src="./avatar.jpg" alt="avatar">
+      <img src="./Images/avatar.jpg" alt="avatar">
     </ion-avatar>
+
     <ion-label>
       <h3>hey, Puru</h3>
       <p>Investment Ready</p>
     </ion-label>
+
   </ion-item>
-  <img src="app/Gold/gold1v1/Images/main.svg" alt="main">
+
+  <img src="app/Gold/gold1v1/main.png" alt="main">
+
+  <ion-img src="main.png" alt="main"></ion-img>
+
 </ion-content>
 
 <ion-footer>
-  <ion-button expand="block" routerLink="/gold2v1">Next</ion-button>
+  <ion-button expand="block" routerLink="/gold1v2" class="button">Next</ion-button>
 </ion-footer>

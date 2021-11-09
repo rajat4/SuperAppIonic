@@ -25,15 +25,17 @@
  
   <div class="footerModal Muli_Regular" *ngIf="modal" >
 
-    <div class="addCart-modal-content Muli_Regular" *ngIf="Gold != null">
+    <div class="addCart-modal-content Muli_Regular">
 
       <ion-item-divider style="color:black;" class="ion-no-padding common-margin">
 
-       <ion-col size="3" class="ion-no-padding Muli_Regular" style="font-size: 11px">₹{{Gold.Amount}}/gm</ion-col>
+       <ion-col [size]="'3'" class="ion-no-padding Muli_Regular fs-11">₹{{Gold?.Amount}}/gm</ion-col>
                                                       
-       <ion-col size="3" class="ion-no-padding Muli_Regular warm_grey " style="font-size: 10px">+ ₹{{Gold.GST}} IGST</ion-col>
+       <ion-col [size]="'3'" class="ion-no-padding Muli_Regular warm_grey fs-10">+ ₹{{Gold?.GST}} IGST</ion-col>
        <ion-col size="1"></ion-col>
-       <ion-col class="ion-no-padding Muli_Regular"> <ion-icon name="stopwatch-outline" class="blue ion-no-padding"></ion-icon> </ion-col>
+       <ion-col class="ion-no-padding Muli_Regular"> 
+         <ion-icon name="stopwatch-outline" class="blue ion-no-padding"></ion-icon> 
+      </ion-col>
        <ion-col size="6" style="font-size: 10px" class="ion-no-padding Muli_Regular padding-0-0-5-5">
         valid for <strong>{{Gold.Time}}mins</strong>
        </ion-col>
@@ -50,16 +52,15 @@
 
         <ion-radio slot="" value="{{item.id}}"></ion-radio>
    <div class="img" >
-        <img src="{{item.Logo}}" alt="ICICI" class="size-img-34 ion-no-padding">
+        <img [src]="item.Logo" alt="ICICI" class="size-img-34 ion-no-padding">
       </div>
 
         
-
         <div class="newdiv">
           <p class="ion-no-padding Muli_SemiBold radioDetails Muli_SemiBold">{{item.BankName}}
 
           </p>
-          <p class="ion-no-padding Muli_Regular radioDetails Muli_Regular">A/c: {{item.ACno}}
+          <p class="ion-no-padding Muli_Regular radioDetails Muli_Regular">A/C: {{item.ACno}}
             
           </p>
         </div>

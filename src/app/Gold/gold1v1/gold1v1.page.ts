@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Gold1v1Page implements OnInit {
 
+  defaultImage = 'https://images.unsplash.com/photo-1542831371-29b0f74f9713';
+  image = 'https://images.unsplash.com/photo-1566837945700-30057527ade0';
+
   constructor() { }
 
   ngOnInit() {

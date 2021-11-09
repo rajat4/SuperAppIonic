@@ -1,13 +1,75 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>gold6v1</ion-title>
+    <ion-title class="Muli_Bold">Watchlist</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- <app-header></app-header> -->
+
 <ion-content>
+
+  <ion-segment class="Muli_Bold blue" (ionChange)="categoryChanged($event)">
+
+        <ion-segment-button class="ttn" checked>
+            Bookmarks
+        </ion-segment-button>
+
+        <ion-segment-button class="ttn">
+            Recently Viewed
+        </ion-segment-button>
+
+  </ion-segment>
+<div *ngIf="Bookmarks"></div>
+  <ion-card class="Muli-Regular">
+
+    <ion-grid>
+
+    <ion-row>
+
+      <ion-col [size]="'2'">
+        <ion-img  ></ion-img>
+      </ion-col>
+
+      <ion-col [size]="'8'">
+        <ion-row>
+          <ion-text class="Muli_Bold">Digital Gold</ion-text>
+        </ion-row>
+        <ion-row>
+          <ion-text>
+            <ion-label>24K</ion-label>
+            <ion-icon name="dot"></ion-icon>
+            <ion-label>99.90% Purity</ion-label>
+          </ion-text>
+        </ion-row>
+      </ion-col>
+
+      <ion-col [size]="'2'">
+        <ion-icon name="chevron-forward-outline" class="center"></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col class="green">
+        <ion-row class="greyish">Buying Price/gm</ion-row>
+        <ion-row class="ITF">₹5,050.90</ion-row>
+      </ion-col>
+      <ion-col>
+        <ion-row class="greyish">Selling Price/gm</ion-row>
+        <ion-row>₹4,881.90</ion-row>
+      </ion-col>
+
+    </ion-row>
+
+    </ion-grid>
+
+  </ion-card>
 
 </ion-content>
 
 <ion-footer>
-  <ion-button expand="block" routerLink="/gold7v1">Next</ion-button>
+  <span>
+    <ion-button expand="block" routerLink="/gold5v1">Previous</ion-button>
+    <ion-button expand="block" routerLink="/gold7v1">Next</ion-button>
+  </span>
 </ion-footer>

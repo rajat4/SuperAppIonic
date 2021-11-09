@@ -13,7 +13,7 @@ import { Gold25v1Service } from 'src/app/Services/gold25v1.service';
 export class Gold25v1Page implements OnInit {
 
   Gold: any;
-  modal: boolean = true;
+  modal: boolean = false;
 
   constructor(public modalCtrl: ModalController,
               private dynamicData: Gold25v1Service,

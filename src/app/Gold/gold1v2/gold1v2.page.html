@@ -1,0 +1,92 @@
+<ion-header>
+ 
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="back1()">
+        <ion-icon name="chevron-back-outline" class="blue"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title class="center Muli_Bold">Gold Menu</ion-title>
+  
+    <ion-buttons slot="end">
+      <ion-button routerLink="/gold5v1">
+        <ion-icon name="chevron-forward-outline" class="blue"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <!-- 
+  <img [defaultImage]="defaultImage" [lazyLoad]="image1" class="ion-padding" [debug]="true">
+  <img [defaultImage]="defaultImage" [lazyLoad]="image2" class="ion-padding">
+  <img src="./main.png" alt="main"/>
+  <img [src]="D:/Umesh/Sarvesh Code 11.10.21/SuperAppIonic/src/assets/Images/main.png" class="ion-padding">
+  <img class="zoom-in-zoom-out" src="../../assets/Images/Logo_transperent.png" />
+  -->
+  <ion-row>
+    <ion-col size="2"><img src="../../../assets/Images/cosmea.gif" class="profile-image"></ion-col>
+    <ion-col size="10" class="">
+      <ion-row class="Muli_Bold">hey, Rajat</ion-row>
+      <ion-row class="Muli_Bold fs-11 green"><ion-icon name="checkmark-circle" class="check"></ion-icon>Investment Ready </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <img src="../../../assets/Images/main.png">
+
+  
+    <ion-row> 
+      <ion-text class="Muli_Bold ion-padding-top">My Investments</ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-icon name="copy" class="vertical-center"></ion-icon>
+      <ion-text class="Muli_SemiBold ion-padding">Commodities</ion-text>
+    </ion-row>
+  
+    <hr class="margin-bottom-zero margin-top-zero">
+
+    <ion-row>
+      <ion-text class="Muli_Bold ion-padding-top">My Account</ion-text>
+    </ion-row>
+    <ion-row>
+      <ion-icon name="person" class="vertical-center"></ion-icon>
+      <ion-text class="Muli_SemiBold ion-padding">Account Details</ion-text>
+    </ion-row>
+
+    <hr class="margin-bottom-zero margin-top-zero">
+
+  <div class="Muli_SemiBold">
+    <ion-item class="ion-no-padding">
+      <ion-text class="fs-13">Add Bank Account</ion-text>
+      <ion-icon slot="end" name="chevron-forward-outline" class="blue" size="small"></ion-icon>
+      <hr class="margin-bottom-zero">
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-text class="fs-13">Refer & Earn</ion-text>
+      <ion-icon slot="end" name="chevron-forward-outline" class="blue" size="small"></ion-icon>
+      <hr class="margin-bottom-zero">
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-text class="fs-13">Siri Shortcuts</ion-text>
+      <ion-icon slot="end" name="chevron-forward-outline" class="blue" size="small"></ion-icon>
+      <hr class="margin-bottom-zero">
+    </ion-item>
+
+    <ion-item class="ion-no-padding">
+      <ion-text class="fs-13">Customer Support</ion-text>
+      <ion-icon slot="end" name="chevron-forward-outline" class="blue" size="small"></ion-icon>
+    </ion-item>
+  </div>
+
+  <!-- <ion-item  lines="none" class="MuliBold">
+    Charges / tax applicable
+    <ion-icon *ngIf="!isMenu1Open" name="chevron-down-outline" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
+    <ion-icon *ngIf="isMenu1Open" name="chevron-up-outline" slot="end" class="blue" (click)="toggleAccordion1(0)"></ion-icon>
+  </ion-item> -->
+
+</ion-content>
