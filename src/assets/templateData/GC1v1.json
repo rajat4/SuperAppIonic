@@ -1,0 +1,30 @@
+[{
+    "title": "HDFC",
+    "category":"Stocks",
+    "Percentage":"98.60",
+    "BuyingPrice":"4,632",
+    "SellingPrice":"4,881",
+    "BankDetailsList":[
+        {
+           "id":"1",
+           "BankName":"ICICI Bank Limited",
+           "ACno":"90760323085432",
+           "Logo":"assets/Images/icici2.png"
+        },
+        {
+           "id":"2",
+           "BankName":"HDFC Bank Limited",
+           "ACno":"90040323085432",
+           "Logo":"assets/Images/HDFC.png"
+        }
+     ]
+},
+{
+    "title": "ICICI",
+    "category":"Bonds"
+},
+{
+    "title":"Bandhan",
+    "category":"Bonds"
+}
+]

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gold6v1.page.scss'],
 })
 export class Gold6v1Page implements OnInit {
-
+  type: string = 'all';
   constructor() { }
 
   ngOnInit() {

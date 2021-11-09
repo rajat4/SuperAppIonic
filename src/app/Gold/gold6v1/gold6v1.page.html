@@ -4,11 +4,9 @@
   </ion-toolbar>
 </ion-header>
 
-<!-- <app-header></app-header> -->
-
 <ion-content>
 
-  <ion-segment class="Muli_Bold blue" (ionChange)="categoryChanged($event)">
+  <ion-segment class="Muli_Bold blue" (ionChange)="categoryChanged($event)" [(ngModel)]="type">
 
         <ion-segment-button class="ttn" checked>
             Bookmarks
@@ -19,7 +17,7 @@
         </ion-segment-button>
 
   </ion-segment>
-<div *ngIf="Bookmarks"></div>
+
   <ion-card class="Muli-Regular">
 
     <ion-grid>
@@ -27,7 +25,8 @@
     <ion-row>
 
       <ion-col [size]="'2'">
-        <ion-img  ></ion-img>
+        <!-- <ion-img  [src]="'app/Gold/gold6v1/DG.jpg'"></ion-img> -->
+        <img src="../../../assets/Images/cosmea.gif" class="profile-image">
       </ion-col>
 
       <ion-col [size]="'8'">
@@ -51,12 +50,12 @@
     <ion-row>
 
       <ion-col class="green">
-        <ion-row class="greyish">Buying Price/gm</ion-row>
-        <ion-row class="ITF">₹5,050.90</ion-row>
+        <ion-row class="greyish Muli_Regular fs-11">Buying Price/gm</ion-row>
+        <ion-row class="ITF"><strong>₹5,050.90</strong></ion-row>
       </ion-col>
       <ion-col>
-        <ion-row class="greyish">Selling Price/gm</ion-row>
-        <ion-row>₹4,881.90</ion-row>
+        <ion-row class="greyish Muli_Regular fs-11">Selling Price/gm</ion-row>
+        <ion-row class="ITF"><strong>₹4,881.90</strong></ion-row>
       </ion-col>
 
     </ion-row>
@@ -65,11 +64,12 @@
 
   </ion-card>
 
+
 </ion-content>
 
 <ion-footer>
   <span>
     <ion-button expand="block" routerLink="/gold5v1">Previous</ion-button>
-    <ion-button expand="block" routerLink="/gold7v1">Next</ion-button>
+    <ion-button expand="block" routerLink="/gold6v2">Next</ion-button>
   </span>
 </ion-footer>

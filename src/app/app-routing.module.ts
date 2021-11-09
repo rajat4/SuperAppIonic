@@ -5,7 +5,7 @@ const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'gold5v1',
+    redirectTo: 'gc1v1',
     pathMatch: 'full'
   },
   {
@@ -239,6 +239,26 @@ const routes: Routes = [
   {
     path: 'gold2v2',
     loadChildren: () => import('./Gold/gold2v2/gold2v2.module').then( m => m.Gold2v2PageModule)
+  },
+  {
+    path: 'gold6v2',
+    loadChildren: () => import('./Gold/gold6v2/gold6v2.module').then( m => m.Gold6v2PageModule)
+  },
+  {
+    path: 'gold6v3',
+    loadChildren: () => import('./Gold/gold6v3/gold6v3.module').then( m => m.Gold6v3PageModule)
+  },
+  {
+    path: 'add-to-cart-v1',
+    loadChildren: () => import('./Pages/add-to-cart-v1/add-to-cart-v1.module').then( m => m.AddToCartV1PageModule)
+  },
+  {
+    path: 'gc1v1',
+    loadChildren: () => import('./GC/gc1v1/gc1v1.module').then( m => m.GC1v1PageModule)
+  },
+  {
+    path: 'gc1v2',
+    loadChildren: () => import('./GC/gc1v2/gc1v2.module').then( m => m.GC1v2PageModule)
   },
   // {
   //   path: 'stepper',

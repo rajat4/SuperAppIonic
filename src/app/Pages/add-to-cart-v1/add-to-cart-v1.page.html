@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>AddToCart-v1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button class="ttn Muli_Bold" expand="block" (click)="showModal()">Add To Cart</ion-button>
+
+
+  <div class="customBackgroundColor h-100 w-100 p-4">
+
+    <div class="row h-100" *ngIf="currentStatus === 'successContainer'">
+      
+      <div class="col-md-12">
+        <h4 class="customFont custTextCenter">Congratulations</h4>
+        <h4 class="customFont custTextCenter">Pratik Goswami</h4>
+        <p class="customFontRegular custTextCenter svgFont">Start investing in stocks</p>
+      </div>
+
+      <div class="col-md-12 customButtonContainer">
+        <button  type="button" class="btn custButtonColor w-100 customFont">Explore</button>
+      </div>
+
+  </div>
+</div>
+</ion-content>

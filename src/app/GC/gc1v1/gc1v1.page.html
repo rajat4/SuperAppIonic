@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+
+  <ion-buttons slot="start">
+    <ion-button (click)="back()">
+      <ion-icon name="chevron-back-outline" class="blue"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  
+    <ion-title class="Muli_Bold">My Cart</ion-title>
+
+    <div class="darkish_blue" slot="end">
+      <ion-icon name="copy-outline"></ion-icon>
+      <ion-text class="Muli_Bold fs-11 ion-padding">Edit Cart</ion-text>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+
+    <ion-card class="ion-padding Muli_Regular">
+      <ion-text>{{GC?.title}}</ion-text> 
+      <br>
+      <ion-chip>{{GC?.category}}</ion-chip>
+    </ion-card>
+    
+  </div>
+
+  
+  <ion-card class="ion-padding Muli_Regular">
+    <ion-text>{{GC?.title}}</ion-text> 
+    <br>
+    <ion-chip>{{GC?.category}}</ion-chip>
+  </ion-card>
+
+  <!-- <ion-card *ngFor="#result of results" class="ion-padding Muli_Regular">
+    <ion-icon name="happy-outline"></ion-icon>
+    <h2>{{GC?.title}}, {{GC?.category}}</h2>
+    Rajat
+  </ion-card> -->
+<div class="ion-padding">
+  <h4>NgFor</h4>
+    <ol>
+      <li *ngFor="let person of people">
+        {{ person.name }}
+      </li>
+      <li>
+        <ion-card class="ion-padding Muli_Regular" *ngFor="let card of GC">
+          <ion-text>{{card?.title}}</ion-text> 
+          <br>
+          <ion-chip>{{card?.category}}</ion-chip>
+        </ion-card>
+      </li>
+      <li>
+
+      </li>
+    </ol>
+  </div>
+</ion-content>
