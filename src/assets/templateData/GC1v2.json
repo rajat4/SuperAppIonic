@@ -1,0 +1,43 @@
+
+[
+    {
+        "title": "HDFC",
+        "category":"Stocks",
+        "CMP": "2602.75",
+        "Quantity": "1",
+        "Price": "Mkt",
+        "Amount":"Market"
+    },
+    {
+        "title": "HDFC",
+        "category":"Stocks",
+        "CMP": "2602.75",
+        "Quantity": "1",
+        "Price": "2600.50",
+        "Amount":"2600.50"
+    },
+    {
+        "title":"HDFC",
+        "category":"Stocks",
+        "CMP": "2602.75",
+        "Quantity": "2",
+        "Price": "Mkt",
+        "Amount":"Market"
+    },
+    {
+        "title":"HDFC",
+        "category":"Stocks",
+        "CMP": "2602.75",
+        "Quantity": "2",
+        "Price": "2600.50",
+        "Amount":"5201.00"
+    },
+    {
+        "title":"ABSLANETF",
+        "category":"ETFs",
+        "CMP": "300",
+        "Quantity": "1",
+        "Price": "Mkt",
+        "Amount":"Market"
+    }
+]

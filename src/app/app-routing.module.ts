@@ -5,7 +5,7 @@ const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'gc1v1',
+    redirectTo: 'gc1v2',
     pathMatch: 'full'
   },
   {
@@ -259,6 +259,10 @@ const routes: Routes = [
   {
     path: 'gc1v2',
     loadChildren: () => import('./GC/gc1v2/gc1v2.module').then( m => m.GC1v2PageModule)
+  },
+  {
+    path: 'gc2v1',
+    loadChildren: () => import('./GC/gc2v1/gc2v1.module').then( m => m.Gc2v1PageModule)
   },
   // {
   //   path: 'stepper',
