@@ -55,7 +55,7 @@
 
           <ion-col [size]="'3'" class="_3c">
             <ion-text>Amount</ion-text> <br>
-            <ion-text *ngIf="card.Amount == 'Market'">{{card?.Amount}}</ion-text>
+            <ion-chip *ngIf="card.Amount == 'Market'" class="atc-chip">{{card?.Amount}}</ion-chip>
             <ion-text *ngIf="card.Amount != 'Market'"><strong class="fs-12">₹{{card?.Amount}}</strong></ion-text>
           </ion-col>
 
@@ -91,7 +91,7 @@
 
       <ion-col [size]="'3'" class="_3c">
         <ion-text>Amount</ion-text> <br>
-        <ion-text *ngIf="card.Amount == 'Market'">{{card?.Amount}}</ion-text>
+        <ion-chip *ngIf="card.Amount == 'Market'" class="atc-chip">{{card?.Amount}}</ion-chip>
         <ion-text *ngIf="card.Amount != 'Market'"><strong class="fs-12">₹{{card?.Amount}}</strong></ion-text>
       </ion-col>
 
