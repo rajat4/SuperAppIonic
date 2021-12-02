@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gold4.page.scss'],
 })
 export class Gold4Page implements OnInit {
+  
   public isMenuOpen: boolean = false
   public isMenu1Open: boolean = false;
   public isMenu2Open: boolean = false;
@@ -16,6 +17,7 @@ export class Gold4Page implements OnInit {
 
   ngOnInit() {
   }
+
   public toggleAccordion(id): void {
     if (id == 1) {
       this.ArrowSign = !this.ArrowSign;
