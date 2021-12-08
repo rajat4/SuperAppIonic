@@ -5,7 +5,7 @@ const routes: Routes = [
  
   {
     path: '',
-    redirectTo: 'gold1',
+    redirectTo: 'gold4',
     pathMatch: 'full'
   },
   {
@@ -268,6 +268,14 @@ const routes: Routes = [
     path: 'gc2v2',
     loadChildren: () => import('./GC/gc2v2/gc2v2.module').then( m => m.Gc2v2PageModule)
   },
+  // {
+  //   path: 'header-cart-badge/cart',
+  //   loadChildren: () => import('./pages/cart/cart.module').then( m => m.CartPageModule)
+  // },
+  // {
+  //   path: 'header-cart-badge',
+  //   loadChildren: () => import('./pages/header-cart-badge/header-cart-badge.module').then( m => m.HeaderCartBadgePageModule)
+  // },
   // {
   //   path: 'stepper',
   //   loadChildren: () => import('./Gold/stepper/stepper.module').then( m => m.StepperPageModule)
